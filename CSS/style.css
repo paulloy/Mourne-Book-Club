@@ -1,0 +1,12 @@
+#menu {
+  text-transform: uppercase;
+  text-decoration: none;  
+  list-style-type: none;
+}
+
+#menu a {
+    color: inherit;
+    display: inline-block;
+    float: left;
+    margin-left: 10px;
+}
