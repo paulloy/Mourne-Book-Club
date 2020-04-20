@@ -46,7 +46,46 @@ nav {
 }
 
 /* /header */
+/* footer */
 
-#sml li{
- display: inline-block;
+footer {
+    border: 1px solid black;
 }
+
+.col {
+    text-align: center;
+}
+
+h6 {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 12px;
+    display: inline-block;
+}
+
+#address p {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 12px;
+    display: inline-block;
+    margin-left: 20px;
+} 
+
+#copyright i {
+ font-size: 10px;
+}
+
+#socialmedia li {
+    list-style-type: none;    
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+#socialmedia li a {
+    color: black;
+}
+
+#socialmedia li a:hover {
+    background-color: #c0c0c0;
+}
+
+/* /footer */
