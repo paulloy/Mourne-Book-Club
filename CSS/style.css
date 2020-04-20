@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&family=Noto+Serif+KR:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&family=Noto+Serif+KR:wght@600&display=swap");
 
 /* header */
 
@@ -15,6 +15,8 @@ nav {
 #menu li {
   color: inherit;
   display: inline-block;
+  padding: 0;
+  margin-left: -15px;
 }
 
 #menu li a {
@@ -23,69 +25,85 @@ nav {
   list-style-type: none;
   color: black;
   font-size: 22px;
-  font-family:'Nanum Gothic', sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
 }
 
 #menu li a:hover {
-    border: black solid 1px;
-    background-color: #c0c0c0;
+  border: black solid 1px;
+  background-color: #c0c0c0;
+  padding: 0;
+  margin: 0;
 }
 
 #logo a {
   text-decoration: none;
+  padding: 0;
+  margin: 0;
 }
 
 #logo a h1 {
   color: black;
   text-align: center;
-  font-family: 'Noto Serif KR', serif;
+  font-family: "Noto Serif KR", serif;
   letter-spacing: 2px;
   font-weight: 500;
-  width: 100%;
   display: block;
+  padding: 0;
+  margin: 0;
 }
+
+.col-sm-3 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+
 
 /* /header */
 /* footer */
 
 footer {
-    border: 1px solid black;
+  border: 1px solid black;
 }
 
 .col {
-    text-align: center;
+  text-align: center;
 }
 
 h6 {
-    font-family: 'Nanum Gothic', sans-serif;
-    font-size: 12px;
-    display: inline-block;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 12px;
+  display: inline-block;
+  text-transform: uppercase;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 #address p {
-    font-family: 'Nanum Gothic', sans-serif;
-    font-size: 12px;
-    display: inline-block;
-    margin-left: 20px;
-} 
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 12px;
+  display: inline-block;
+  margin-bottom: 15px;
+}
 
 #copyright i {
- font-size: 10px;
+  font-size: 10px;
 }
 
 #socialmedia li {
-    list-style-type: none;    
-    display: inline-block;
-    margin-left: 10px;
-    font-size: 30px;
+  list-style-type: none;
+  display: inline-block;
+  font-size: 30px;
+  padding: 0;
 }
 
 #socialmedia li a {
-    color: black;
+  color: black;
 }
 
 #socialmedia li a:hover {
-    background-color: #c0c0c0;
+  background-color: #c0c0c0;
 }
 
 /* /footer */
