@@ -7,16 +7,34 @@ nav {
   background-color: white;
 }
 
+#header {
+  padding: 0;
+}
+
+#navbar {
+  margin: 0;
+  padding: 0;
+}
+
 #menu {
   margin-top: 10px;
   margin-bottom: 10px;
+  padding: 0;
+  display: block;
+  align-content: center;
+}
+
+#menu .list-inline-item {
+  margin: 0;
+  padding-left: 12.5px;
+  padding-right: 12.5px;
 }
 
 #menu li {
   color: inherit;
-  display: inline-block;
+  display: inline;
   padding: 0;
-  margin-left: -15px;
+  margin-left: 5%;
 }
 
 #menu li a {
@@ -28,20 +46,12 @@ nav {
   font-family: "Nanum Gothic", sans-serif;
 }
 
-#menu li a:hover {
-  border: black solid 1px;
-  background-color: #c0c0c0;
-  padding: 0;
-  margin: 0;
-}
-
 #logo a {
   text-decoration: none;
   padding: 0;
-  margin: 0;
 }
 
-#logo a h1 {
+#logo a h2 {
   color: black;
   text-align: center;
   font-family: "Noto Serif KR", serif;
@@ -49,16 +59,26 @@ nav {
   font-weight: 500;
   display: block;
   padding: 0;
+  font-size: 40px;
   margin: 0;
 }
 
-.col-sm-3 {
-  margin: 0;
-  padding: 0;
-  text-align: center;
+@media only screen and (max-width: 433px) {
+  #logo a h2 {
+    font-size: 28px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  #menu {
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+  #menu li a {
+    font-size: 18px;
+    margin-left: -1vw;
+    margin-right: -1vw;
+  }
 }
-
-
 
 /* /header */
 /* footer */
