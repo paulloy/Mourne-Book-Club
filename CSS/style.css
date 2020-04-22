@@ -12,38 +12,13 @@ nav {
 }
 
 #navbar {
-  margin: 0;
+  margin: 10px 0 10px 0;
   padding: 0;
 }
 
-#menu {
+#logo {
   margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 0;
-  display: block;
-  align-content: center;
-}
-
-#menu .list-inline-item {
-  margin: 0;
-  padding-left: 12.5px;
-  padding-right: 12.5px;
-}
-
-#menu li {
-  color: inherit;
-  display: inline;
-  padding: 0;
-  margin-left: 5%;
-}
-
-#menu li a {
-  text-transform: uppercase;
-  text-decoration: none;
-  list-style-type: none;
-  color: black;
-  font-size: 22px;
-  font-family: "Nanum Gothic", sans-serif;
+  margin-bottom: 17px;
 }
 
 #logo a {
@@ -63,20 +38,69 @@ nav {
   margin: 0;
 }
 
+#menu {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0;
+  display: block;
+  align-content: center;
+}
+
+#menu .list-inline-item {
+  margin: 0;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+#menu li {
+  color: inherit;
+  display: inline;
+  padding: 0;
+  margin-left: 5%;
+}
+
+#menu li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+  font-size: 22px;
+  font-family: "Nanum Gothic", sans-serif;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+
 @media only screen and (max-width: 433px) {
   #logo a h2 {
     font-size: 28px;
     margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
   #menu {
-    margin-top: 10px;
-    margin-bottom: 25px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+  #menu .list-inline-item {
+    padding: 0;
   }
   #menu li a {
     font-size: 18px;
-    margin-left: -1vw;
-    margin-right: -1vw;
+    margin-left: -2vw;
+    margin-right: -2vw;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  #menu li a {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+}
+
+@media only screen and (max-width: 486px) {
+  #menu li a {
+    margin-left: 1%;
+    margin-right: 1%;
   }
 }
 
