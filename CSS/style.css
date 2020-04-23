@@ -1,12 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Raleway:wght@200;300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Raleway:wght@200;300;400;500;600;700;800&display=swap");
 /* header */
 
-nav {
-  background-color: #7395ae;
+#nav-button {
+  margin-right: 30px;
+}
+
+#toggle-icon {
+  border: 1px solid #344b5c;
+  color: #344b5c;
+  padding: 8px;
+  border-radius: 25%;
+}
+
+#toggle-icon i {
+  position: relative;
+  left: -2px;
+  top: -4px;
+}
+
+#toggle-icon:hover {
+    background-color: #5d829e;
 }
 
 #header {
   padding: 0;
+  background-color: #7395ae;
 }
 
 #navbar {
@@ -15,8 +33,10 @@ nav {
 }
 
 #logo {
+  margin-left: 30px;
+  padding: 0;
   margin-top: 10px;
-  margin-bottom: 17px;
+  margin-bottom: 10px;
 }
 
 #logo a {
@@ -25,9 +45,8 @@ nav {
 }
 
 #logo a h2 {
-  color: black;
   text-align: center;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   letter-spacing: 2px;
   font-weight: 500;
   display: block;
@@ -38,69 +57,52 @@ nav {
 }
 
 #menu {
-  margin-top: 10px;
-  margin-bottom: 10px;
   padding: 0;
-  display: block;
-  align-content: center;
-}
-
-#menu .list-inline-item {
-  margin: 0;
-  padding-left: 7px;
-  padding-right: 7px;
-}
-
-#menu li {
-  color: inherit;
   display: inline;
-  padding: 0;
-  margin-left: 5%;
+  margin-right: 30px;
 }
 
 #menu li a {
   text-transform: uppercase;
   text-decoration: none;
   list-style-type: none;
-  color: black;
   font-size: 22px;
-  font-family: 'Poppins', sans-serif;
-  margin-left: 2.5%;
-  margin-right: 2.5%;  
+  font-family: "Poppins", sans-serif;
   color: #344b5c;
-}
-
-@media only screen and (max-width: 433px) {
-  #logo a h2 {
-    font-size: 28px;
-    margin-top: 15px;
-    margin-bottom: 10px;
-  }
-  #menu {
-    margin-top: 5px;
-    margin-bottom: 20px;
-  }
-  #menu .list-inline-item {
-    padding: 0;    
-    margin-left: 1vw;
-    margin-right: 1vw;
-  }
-  #menu li a {
-    font-size: 18px;
-  }
+  margin-left: 20px;
 }
 
 @media only screen and (max-width: 991px) {
-  #menu li a {
-    margin-left: 2.5%;
-    margin-right: 2.5%;
+  #menu li {
+    display: block;
+    text-align: right;
+    margin-right: 40px;
+  }
+  #collapseNav {
+    border-top: 1px solid #344b5c;
+    background-color:#5d829e;
   }
 }
 
-@media only screen and (max-width: 503px) {
-  #menu li a {
-    margin: 0 1vw 0 1vw;
+@media only screen and (max-width: 569px) {
+  #nav-button {
+    margin-right: 5px;
   }
+  #logo {
+    margin-left: 5px;
+  }
+  #logo a h2 {
+    font-size: 7vw;
+  }
+  #menu li a {
+      font-size: 4vw;
+  }
+}
+
+#menu li a:hover {
+    color:#5d829e;
+    background-color: #344b5c;
+    padding: 12px 6px 12px 6px;
 }
 
 /* /header */

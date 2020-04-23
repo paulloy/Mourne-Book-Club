@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mourne Book Club</title>
     <!--Bootstrap-->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -19,44 +24,51 @@
       crossorigin="anonymous"
     ></script>
     <!--/font awesome-->
+    <!--Custom CSS-->
     <link rel="stylesheet" href="CSS/style.css" type="text/css" />
+    <!--/custom CSS-->
   </head>
 
   <body>
     <header>
-      <nav>
-        <div id="header" class="container-fluid">
-          <div class="row no-gutters">
-            <div class="col-12 col-lg-6" id="logo">
-              <a href="index.html">
-                <h2>Mourne Book Club</h2>
-              </a>
-            </div>
-            <div class="col-12 col-lg-6">
-              <div class="container-fluid" id="navbar">
-                <div class="row no-gutters">
-                  <ul id="menu" class="list-inline col">
-                    <li class="list-inline-item col-3">
-                      <a href="index.html">HOME</a>
-                    </li>
-                    <li class="list-inline-item col-3">
-                      <a href="#">MEMBERS</a>
-                    </li>
-                    <li class="list-inline-item col-3"><a href="#">FAQ</a></li>
-                    <li class="list-inline-item col-3">
-                      <a href="#">CONTACT</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
+      <nav id="header" class="navbar navbar-expand-lg">
+        <div id="logo">
+          <a class="navbar-brand" href="index.html">
+            <h2>Mourne Book Club</h2>
+          </a>
+        </div>
+
+        <button
+          id="nav-button"
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#collapseNav"
+        >
+          <span id="toggle-icon" class="navbar-toggler-icon"
+            ><i class="fas fa-bars"></i
+          ></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapseNav">
+          <ul class="navbar-nav ml-auto list-inline" id="menu">
+            <li class="nav-item list-inline-item">
+              <a class="nav-link" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item list-inline-item">
+              <a class="nav-link" href="#">MEMBERS</a>
+            </li>
+            <li class="nav-item list-inline-item">
+              <a class="nav-link" href="#">FAQ</a>
+            </li>
+            <li class="nav-item list-inline-item">
+              <a class="nav-link" href="#">CONTACT</a>
+            </li>
+          </ul>
         </div>
       </nav>
     </header>
 
-    <section>
-    </section>
+    <section></section>
 
     <footer>
       <div class="container-fluid">
@@ -96,18 +108,13 @@
   </body>
   <!--Bootstrap-->
   <script
-    src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"
-  ></script>
-  <script
     src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"
   ></script>
   <!--/bootstrap-->
