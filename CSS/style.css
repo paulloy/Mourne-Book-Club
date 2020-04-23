@@ -139,46 +139,47 @@
 /* footer */
 
 footer {
-  border: 1px solid black;
-}
-
-.col {
-  text-align: center;
-}
-
-h6 {
-  font-family: "Nanum Gothic", sans-serif;
-  font-size: 12px;
-  display: inline-block;
-  text-transform: uppercase;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-#address p {
-  font-family: "Nanum Gothic", sans-serif;
-  font-size: 12px;
-  display: inline-block;
-  margin-bottom: 15px;
-}
-
-#copyright i {
-  font-size: 10px;
-}
-
-#socialmedia li {
-  list-style-type: none;
-  display: inline-block;
-  font-size: 30px;
   padding: 0;
+  border: 5px solid whitesmoke;
+  background-color: #7395ae;
+  font-family: "Poppins", sans-serif;
+  color: #344b5c;
+  font-size: 20px;
 }
 
-#socialmedia li a {
-  color: black;
+#copyright,
+#address,
+#socialmedia {
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+  font-family: 
 }
 
-#socialmedia li a:hover {
-  background-color: #c0c0c0;
+#socialmedia ul li a i {
+    padding: 2px;
+    border: 1px solid #344b5c;
+    border-radius: 20%;
 }
+
+#socialmedia ul li a i {
+    color: #344b5c;
+    font-size: 40px;
+    margin-left: 15px
+}
+
+#socialmedia ul li a #fb:hover {
+    color: #3b5998;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+#socialmedia ul li a #tt:hover {
+    color: #08a0e9;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+#socialmedia ul li a #yt:hover {
+    color: #c4302b;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
 
 /* /footer */
