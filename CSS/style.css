@@ -136,7 +136,8 @@
 
 /* ----------/header---------- */
 
-/* footer */
+
+/* ----------Footer---------- */
 
 footer {
   border: 5px solid whitesmoke;
@@ -172,10 +173,11 @@ footer {
   text-align: center;
 }
 
-#address span {
-    font-size: 15px; 
+#address div {
+    font-size: 15px;
+    margin: 0;
+    padding: 0; 
 }
-
 
 #socialmedia p {
   font-size: 15px;
@@ -190,7 +192,8 @@ footer {
 #socialmedia ul li a i {
   color: #344b5c;
   font-size: 30px;
-  margin-left: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 #socialmedia ul li a #fb:hover {
@@ -212,4 +215,13 @@ footer {
   }
 }
 
-/* /footer */
+@media only screen and (max-width: 569px) {
+    #copyright {
+        height: 80px;
+    }
+    footer {
+        font-size: 12px;
+    }
+}
+
+/* ----------/footer---------- */
