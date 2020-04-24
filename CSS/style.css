@@ -139,47 +139,77 @@
 /* footer */
 
 footer {
-  padding: 0;
   border: 5px solid whitesmoke;
   background-color: #7395ae;
   font-family: "Poppins", sans-serif;
   color: #344b5c;
-  font-size: 20px;
+  font-size: 13px;
 }
 
-#copyright,
-#address,
-#socialmedia {
-  display: inline-block;
-  width: 33%;
+#foot #address,
+#foot #socialmedia {
   text-align: center;
-  font-family: 
+  height: 100px;
+  padding-top: 10px;
+  display: block;
+}
+
+#copyright {
+  position: relative;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+}
+
+#copyright p {
+  position: absolute;
+  right: 15px;
+  bottom: 0;
+}
+
+#address {
+  position: relative;
+  text-align: center;
+}
+
+#address span {
+    font-size: 15px; 
+}
+
+
+#socialmedia p {
+  font-size: 15px;
 }
 
 #socialmedia ul li a i {
-    padding: 2px;
-    border: 1px solid #344b5c;
-    border-radius: 20%;
+  padding: 2px;
+  border: 1px solid #344b5c;
+  border-radius: 20%;
 }
 
 #socialmedia ul li a i {
-    color: #344b5c;
-    font-size: 40px;
-    margin-left: 15px
+  color: #344b5c;
+  font-size: 30px;
+  margin-left: 15px;
 }
 
 #socialmedia ul li a #fb:hover {
-    color: #3b5998;
-    background-color: rgba(255, 255, 255, 0.5);
+  color: #3b5998;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 #socialmedia ul li a #tt:hover {
-    color: #08a0e9;
-    background-color: rgba(255, 255, 255, 0.5);
+  color: #08a0e9;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 #socialmedia ul li a #yt:hover {
-    color: #c4302b;
-    background-color: rgba(255, 255, 255, 0.5);
+  color: #c4302b;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
+@media only screen and (max-width: 991px) {
+      #socialmedia {
+      border-bottom: 1px solid #344b5c;
+  }
+}
 
 /* /footer */
