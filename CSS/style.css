@@ -258,9 +258,10 @@ section {
 
 /* ----------members.html---------- */
 
-#memberlist {
-    padding-left: 10px;
-    padding-right: 10px;
+.memberlist {
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .members {
