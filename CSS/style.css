@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Raleway:wght@200;300;400;500;600;700;800&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@100;200;300;400;500;600;700;800;900&display=swap');
 /* ----------Header---------- */
 
 #header {
@@ -49,12 +49,11 @@
 
 #logo a h2 {
   text-align: center;
-  font-family: "Raleway", sans-serif;
-  letter-spacing: 2px;
-  font-weight: 500;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
   display: block;
   padding: 0;
-  font-size: 40px;
+  font-size: 44px;
   margin: 0;
   color: #344b5c;
 }
@@ -225,3 +224,31 @@ footer {
 }
 
 /* ----------/footer---------- */
+
+
+/* ----------index.html---------- */
+
+
+
+/* ----------/index.html---------- */
+
+/* ----------faq.html---------- */
+
+section {
+    background-color: whitesmoke;
+    font-family: "Poppins", sans-serif;
+    color: #344b5c;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#QandA div {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#QandA div h2 {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 700;
+}
