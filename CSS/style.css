@@ -232,7 +232,6 @@ footer {
 
 /* ----------/index.html---------- */
 
-/* ----------faq.html---------- */
 
 section {
     background-color: whitesmoke;
@@ -241,6 +240,8 @@ section {
     padding-top: 40px;
     padding-bottom: 40px;
 }
+
+/* ----------faq.html---------- */
 
 #QandA div {
     padding-left: 20px;
@@ -252,3 +253,45 @@ section {
     font-size: 20px;
     font-weight: 700;
 }
+
+/* ----------/faq.html---------- */
+
+/* ----------members.html---------- */
+
+#memberlist {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.members {
+    width: 120px;
+    height: 180px;
+}
+
+.members div {
+    width: 100%;
+    display: inline-block; 
+    height: 120px;
+    border-radius: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.members p {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    margin-top: 5px;
+    margin-bottom: -5px;
+}
+
+.members p:first-of-type {
+    font-weight: 700;
+}
+
+.members div img {
+    height: 100%;
+    width: auto;    
+    display: block;
+}
+
