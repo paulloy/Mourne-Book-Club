@@ -228,7 +228,10 @@ footer {
 
 /* ----------index.html---------- */
 
-
+.carousel-item img {
+    max-height: 60vh;
+    width: 100%;
+}
 
 /* ----------/index.html---------- */
 
