@@ -243,6 +243,13 @@ footer {
     margin: 0;
 }
 
+#carousel-control-left,
+#carousel-control-right {
+    color: black;
+    font-size: 40px;
+    display: inline-block;
+}
+
 .cover {
     width: 100%;
     height: 100%;
@@ -252,9 +259,45 @@ footer {
 .cover h4 {
     padding-top: 3vh;
     font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+.bookbox {
+    background-color: #1d2b35dc;
+    border: 8px solid #0d1318;
+    position: absolute;
+    border-radius: 5%;
+    height: 96%;
+    width: 50%;
+    left: 25%;
+    right: 25%;
+    top: 2%;
+    bottom: 2%;
+}
+
+.bookbox div {
+    margin-top: 25px;
 }
 
 
+
+.bookbox img {
+    position: absolute;
+    top: 20%;
+    bottom: 20%;
+    left: 10%;
+    height: 60%;
+    width: auto;
+}
+
+.bookbox button {
+    font-family: arial;
+    font-weight: 700;
+    color: #1c2933;
+    background-color: #5d829e;
+    border: 0;
+    border-radius: 8%;
+}
 
 #book-carousel {
     width: 95%;
