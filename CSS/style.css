@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Raleway:wght@200;300;400;500;600;700;800&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@100;200;300;400;500;600;700;800;900&display=swap");
 /* ----------Header---------- */
 
 #header {
@@ -49,7 +49,7 @@
 
 #logo a h2 {
   text-align: center;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-weight: 700;
   display: block;
   padding: 0;
@@ -135,7 +135,6 @@
 
 /* ----------/header---------- */
 
-
 /* ----------Footer---------- */
 
 footer {
@@ -173,9 +172,9 @@ footer {
 }
 
 #address div {
-    font-size: 15px;
-    margin: 0;
-    padding: 0; 
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
 }
 
 #socialmedia p {
@@ -209,158 +208,207 @@ footer {
 }
 
 @media only screen and (max-width: 991px) {
-      #socialmedia {
-      border-bottom: 1px solid #344b5c;
+  #socialmedia {
+    border-bottom: 1px solid #344b5c;
   }
 }
 
 @media only screen and (max-width: 569px) {
-    #copyright {
-        height: 80px;
-    }
-    footer {
-        font-size: 12px;
-    }
+  #copyright {
+    height: 80px;
+  }
+  footer {
+    font-size: 12px;
+  }
 }
 
 /* ----------/footer---------- */
 
-
 /* ----------index.html---------- */
 
-section h2:first-of-type {
-    text-align: center;
-    margin-top: -35px;
-    margin-bottom: 10px;
-}
-
 .carousel-item img {
-    max-height: 60vh;
-    width: 100%;
-    object-fit: cover;
+  max-height: 375px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .carousel-caption {
-    right: 0;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    padding: 0;
-    margin: 0;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
 }
 
 #carousel-control-left,
 #carousel-control-right {
-    color: rgb(155, 155, 155);
-    font-size: 40px;
-    display: inline-block;
-    position: absolute;
+  color: rgb(155, 155, 155);
+  font-size: 40px;
+  display: inline-block;
+  position: absolute;
 }
 
 #carousel-control-left {
-    left: 2%;
-    top: 40%;
+  left: 2%;
+  top: 40%;
 }
 
 #carousel-control-right {
-    right: 2%;
-    top: 40%;
+  right: 2%;
+  top: 40%;
 }
 
 #carousel-control-left:hover,
 #carousel-control-right:hover {
-    color: white;
+  color: white;
 }
 
-
 .cover {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.6);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .cover h4 {
-    padding-top: 3vh;
-    font-family: "Poppins", sans-serif;
-    color: white;
+  padding-top: 3vh;
+  font-family: "Poppins", sans-serif;
+  color: white;
 }
 
 .bookbox {
-    background-color: #1d2b35dc;
-    border: 8px solid #0d1318;
-    position: absolute;
-    border-radius: 5%;
-    height: 96%;
-    width: 50%;
-    left: 25%;
-    right: 25%;
-    top: 2%;
-    bottom: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #1d2b35dc;
+  border: 8px solid #0d1318;
+  position: absolute;
+  border-radius: 5%;
+  height: 96%;
+  width: 50%;
+  left: 25%;
+  right: 25%;
+  top: 2%;
+  bottom: 2%;
 }
 
-.bookbox div {
-    margin-top: 25px;
-    margin-left: 30%;
-    display: inline-block;
+.flex-item {
+  justify-content: center;
 }
 
 .bookbox div p {
-     text-align: left;
-     width: 100%;
+  text-align: center;
+  width: 100%;
+}
+
+.flex1 {
+  width: 100%;
+  font-size: 25px;
+}
+
+.flex2 {
+  align-self: flex-start;
+  flex-basis: auto;
+  width: 30%;
+}
+
+.flex3 {
+  align-self: flex-start;
+  flex-basis: auto;
+  width: 70%;
+}
+
+.flex3 p {
+  text-align: left;
+}
+
+.flex4 {
+  width: 100%;
+  height: 25px;
+  align-self: center;
 }
 
 .bookbox img {
-    position: absolute;
+  /* position: absolute;
     top: 20%;
     bottom: 20%;
-    left: 10%;
-    height: 15vw;
-    width: auto;
+    left: 10%; */
+  width: 112px;
+  height: auto;
 }
 
 .bookbox button {
-    font-family: arial;
-    font-weight: 700;
-    color: #1c2933;
-    background-color: #5d829e;
-    border: 0;
-    border-radius: 8%;
-    display: inline-block;
-    position: absolute;
+  font-family: arial;
+  font-weight: 700;
+  color: #1c2933;
+  background-color: #5d829e;
+  border: 0;
+  border-radius: 8%;
+  /* display: inline-block;
+    position: absolute; 
     bottom: 30px;
     right: 40%;
-    z-index: auto;
+    z-index: auto; */
 }
 
-
-
 #book-carousel {
-    width: 95%;
-    margin: 0 auto;
+  width: 95%;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 991px) {
+  .bookbox {
+    width: 70%;
+    left: 15%;
+    right: 15%;
+  }
+  .flex1 {
+    font-size: 2.5vw;
+  }
+}
+
+@media only screen and (max-width: 725px) {
+  .bookbox {
+    width: 86%;
+    left: 7%;
+    right: 7%;
+  }
+  #carousel-control-left,
+  #carousel-control-right {
+    font-size: 4vw;
+  }
+  .flex1 {
+    font-size: 15px;
+  }
+   
+  .flex2 img {
+      height: 40px;
+      width: 40px;
+  }
+  
+  .carousel-item img {
+    height: 475px;
+  }
 }
 
 /* ----------/index.html---------- */
 
-
 section {
-    background-color: whitesmoke;
-    font-family: "Poppins", sans-serif;
-    color: #344b5c;
-    padding-top: 40px;
-    padding-bottom: 40px;
+  background-color: whitesmoke;
+  font-family: "Poppins", sans-serif;
+  color: #344b5c;
 }
 
 /* ----------faq.html---------- */
 
 #QandA div {
-    padding-left: 20px;
-    padding-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 #QandA div h2 {
-    margin-top: 30px;
-    font-size: 20px;
-    font-weight: 700;
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 /* ----------/faq.html---------- */
@@ -368,40 +416,39 @@ section {
 /* ----------members.html---------- */
 
 .memberlist {
-    display: inline-block;
-    padding-left: 15px;
-    padding-right: 15px;
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .members {
-    width: 120px;
-    height: 180px;
+  width: 120px;
+  height: 180px;
 }
 
 .members div {
-    width: 100%;
-    display: inline-block; 
-    height: 120px;
-    border-radius: 100%;
-    object-fit: cover;
-    overflow: hidden;
+  width: 100%;
+  display: inline-block;
+  height: 120px;
+  border-radius: 100%;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 .members p {
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-    font-size: 13px;
-    margin-top: 5px;
-    margin-bottom: -5px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  margin-top: 5px;
+  margin-bottom: -5px;
 }
 
 .members p:first-of-type {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .members div img {
-    height: 100%;
-    width: auto;    
-    display: block;
+  height: 100%;
+  width: auto;
+  display: block;
 }
-
