@@ -267,7 +267,7 @@ footer {
 .cover {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .cover h4 {
@@ -307,8 +307,12 @@ footer {
 
 .flex2 {
   align-self: flex-start;
-  flex-basis: auto;
   width: 30%;
+}
+
+.flex2 p:nth-child(2),
+.flex2 p:nth-child(4) {
+    font-style: italic;
 }
 
 .flex3 {
@@ -325,6 +329,10 @@ footer {
   width: 100%;
   height: 25px;
   align-self: center;
+}
+
+.flex4 button {
+  z-index: 1000;
 }
 
 .bookbox img {
@@ -368,23 +376,43 @@ footer {
 
 @media only screen and (max-width: 725px) {
   .bookbox {
-    width: 86%;
-    left: 7%;
-    right: 7%;
+    width: 84%;
+    left: 8%;
+    right: 8%;
   }
   #carousel-control-left,
   #carousel-control-right {
-    font-size: 4vw;
+    font-size: 5vw;
+  }
+  #carousel-control-left {
+    left: 1.5%;
+  }
+  #carousel-control-right {
+    right: 1.5%;
   }
   .flex1 {
     font-size: 15px;
   }
-   
-  .flex2 img {
-      height: 40px;
-      width: 40px;
+  .flex2 {
+    margin-top: -10px;
+    margin-bottom: 10px;
+    height: 140px;
+    width: 100%;
+    overflow: hidden;
   }
-  
+  .flex2 img {
+    object-fit: contain;
+    margin-top: -90px;
+    align-self: center;
+    height: 100%;
+  }
+  .flex3 {
+    width: 100%;
+    font-size: 12px;
+  }
+  .flex3 p {
+      margin-bottom: 2px;
+  }
   .carousel-item img {
     height: 475px;
   }
