@@ -228,6 +228,12 @@ footer {
 
 /* ----------index.html---------- */
 
+section h2:first-of-type {
+    text-align: center;
+    margin-top: -35px;
+    margin-bottom: 10px;
+}
+
 .carousel-item img {
     max-height: 60vh;
     width: 100%;
@@ -245,10 +251,27 @@ footer {
 
 #carousel-control-left,
 #carousel-control-right {
-    color: black;
+    color: rgb(155, 155, 155);
     font-size: 40px;
     display: inline-block;
+    position: absolute;
 }
+
+#carousel-control-left {
+    left: 2%;
+    top: 40%;
+}
+
+#carousel-control-right {
+    right: 2%;
+    top: 40%;
+}
+
+#carousel-control-left:hover,
+#carousel-control-right:hover {
+    color: white;
+}
+
 
 .cover {
     width: 100%;
@@ -277,16 +300,21 @@ footer {
 
 .bookbox div {
     margin-top: 25px;
+    margin-left: 30%;
+    display: inline-block;
 }
 
-
+.bookbox div p {
+     text-align: left;
+     width: 100%;
+}
 
 .bookbox img {
     position: absolute;
     top: 20%;
     bottom: 20%;
     left: 10%;
-    height: 60%;
+    height: 15vw;
     width: auto;
 }
 
@@ -297,7 +325,14 @@ footer {
     background-color: #5d829e;
     border: 0;
     border-radius: 8%;
+    display: inline-block;
+    position: absolute;
+    bottom: 30px;
+    right: 40%;
+    z-index: auto;
 }
+
+
 
 #book-carousel {
     width: 95%;
