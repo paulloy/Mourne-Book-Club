@@ -226,6 +226,12 @@ footer {
 
 /* ----------index.html---------- */
 
+section h2:first-of-type {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 .carousel-item img {
   max-height: 375px;
   width: 100%;
@@ -303,16 +309,19 @@ footer {
 .flex1 {
   width: 100%;
   font-size: 25px;
+  margin-top: -10px;
 }
 
 .flex2 {
   align-self: flex-start;
   width: 30%;
+  padding-left: 40px;
 }
 
-.flex2 p:nth-child(2),
-.flex2 p:nth-child(4) {
-    font-style: italic;
+.flex3 p:nth-child(2),
+.flex3 p:nth-child(4) {
+  font-style: italic;
+  font-weight: 200;
 }
 
 .flex3 {
@@ -385,10 +394,10 @@ footer {
     font-size: 5vw;
   }
   #carousel-control-left {
-    left: 1.5%;
+    left: 15%;
   }
   #carousel-control-right {
-    right: 1.5%;
+    right: 15%;
   }
   .flex1 {
     font-size: 15px;
@@ -399,19 +408,21 @@ footer {
     height: 140px;
     width: 100%;
     overflow: hidden;
+    object-fit: fill;
   }
   .flex2 img {
-    object-fit: contain;
-    margin-top: -90px;
-    align-self: center;
-    height: 100%;
+    height: 100px;
+    width: auto;
+    max-width: 150px;
+    object-fit: fill;
   }
   .flex3 {
     width: 100%;
     font-size: 12px;
+    margin-top: -10px;
   }
   .flex3 p {
-      margin-bottom: 2px;
+    margin-bottom: 5px;
   }
   .carousel-item img {
     height: 475px;
