@@ -68,7 +68,7 @@
     </header>
 
     <section>
-      <h2>Contact Us</h2>
+      <h2 class="page-title">Contact Us <i class="far fa-comment-alt"></i></h2>
       <div class="container-fluid">
         <div class="row no-gutters">
           <div class="col-md-6 col-12">
@@ -86,34 +86,49 @@
               ></iframe>
             </div>
           </div>
+
           <div id="contact-address" class="col-md-6 col-12">
-            <div>Address</div>
+            <strong>Address</strong>
+            <p>
+              12 Burren Road,<br />Rostrevor,<br />County Down.<br />BT34 1AB
+            </p>
             <br />
-            <em
-              >12 Burren Road,<br />Rostrevor,<br />County Down.<br />BT34
-              1AB</em
-            ><br />
-            <p>Phone Number:</p>
-            <p>+44 (0) 742 637 1899</p>
+            <strong>Phone Number:</strong>
+            <p>+44 6276 693281</p>
             <br />
-            <p>Email:</p>
-            <p>info@yes.org</p>
+            <strong>Email:</strong>
+            <p>mournebookclub@gmail.com</p>
           </div>
-          <div id="input1" class="col-lg-6 col-12">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" placeholder="full name" />
-            <label for="email">Email:</label>
-            <input type="email" id="email" placeholder="info@blah.ie" />
-            <label for="number">Your Phone Number (Optional):</label>
-            <input type="number" id="number" />
-            <label for="mailinglist">Join Our Mailing List</label>
-            <input type="radio" id="mailinglist" />
-          </div>
-          <div id="input2" class="col-lg-6 col-12">
-            <label for="message">Your Message:</label>
-            <input type="text" id="message" />
-            <button type="submit">Submit</button>
-          </div>
+          <form method="post" action="https://formdump.codeinstitute.net">
+            <div id="input1" class="col-lg-6 col-12">
+              <label for="name"><strong>Your Name:</strong></label>
+              <input name="name" type="text" id="name" required />
+              <label for="email"><strong>Your Email:</strong></label>
+              <input
+                name="email"
+                type="email"
+                id="email"
+                placeholder=" example@address.com"
+                required
+              />
+              <label name="number" for="number"
+                ><strong>Your Phone Number (Optional):</strong></label
+              >
+              <input type="tel" id="number" />
+              <span
+                ><label for="mailinglist"
+                  ><strong>Join Our Mailing List (Optional):</strong></label
+                >
+                <input name="mailing-list" type="checkbox" id="mailinglist"
+              /></span>
+            </div>
+
+            <div id="input2" class="col-lg-6 col-12">
+              <label for="message"><strong>Your Message:</strong></label>
+              <input name="message" type="text" id="message" max-length="280" required />
+              <button type="submit">Send Message</button>
+            </div>
+          </form>
         </div>
       </div>
     </section>

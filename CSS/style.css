@@ -554,13 +554,19 @@ section h2.page-title {
 /* ----------contact.html---------- */
 
 #google-map iframe {
-  width: 100%;
+  width: 125%;
   height: 300px;
   align-self: center;
+  padding-left: 5%;
 }
 
 #contact-address {
-  text-align: center;
+  text-align: left;
+  font-size: 15px;
+  padding-left: 18vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #input1,
@@ -584,9 +590,51 @@ section h2.page-title {
 #input2 label {
   margin: 8px 0 8px 0;
   font-family: "Poppins", sans-serif;
+  font-size: 15px;
+}
+
+#input1 input,
+#input2 input {
+  width: 90%;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+form {
+    display: flex;
+    width: 100%;
+}
+
+#input1 ,
+#input2 {
+    margin-top: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#input1 span label,
+#input1 span input {
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 0;
+    width: 50%;
+    margin-top: 30px;
+}
+
+#input1 span input {
+    width: 20px;
 }
 
 #input2 button {
   width: 100px;
   align-self: flex-end;
+}
+
+@media only screen and (max-width: 768px) {
+  #google-map iframe {
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+    align-self: center;
+  }
 }
