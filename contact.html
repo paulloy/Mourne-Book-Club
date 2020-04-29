@@ -99,36 +99,46 @@
             <strong>Email:</strong>
             <p>mournebookclub@gmail.com</p>
           </div>
-          <form method="post" action="https://formdump.codeinstitute.net">
-            <div id="input1" class="col-lg-6 col-12">
-              <label for="name"><strong>Your Name:</strong></label>
-              <input name="name" type="text" id="name" required />
-              <label for="email"><strong>Your Email:</strong></label>
-              <input
-                name="email"
-                type="email"
-                id="email"
-                placeholder=" example@address.com"
-                required
-              />
-              <label name="number" for="number"
-                ><strong>Your Phone Number (Optional):</strong></label
-              >
-              <input type="tel" id="number" />
-              <span
-                ><label for="mailinglist"
-                  ><strong>Join Our Mailing List (Optional):</strong></label
+          <fieldset class="col-12">
+            <form method="post" action="https://formdump.codeinstitute.net">
+              <div id="input1">
+                <label for="name"><strong>Your Name:</strong></label>
+                <input name="name" type="text" id="name" required />
+                <label for="email"><strong>Your Email:</strong></label>
+                <input
+                  name="email"
+                  type="email"
+                  id="email"
+                  placeholder=" example@address.com"
+                  required
+                />
+                <label name="phone" for="phone"
+                  ><strong>Your Phone Number (Optional):</strong></label
                 >
-                <input name="mailing-list" type="checkbox" id="mailinglist"
-              /></span>
-            </div>
+                <input name="phone" type="tel" id="phone" />
+                <span
+                  ><label for="mailinglist"
+                    ><strong>Join Our Mailing List (Optional):</strong></label
+                  >
+                  <input name="mailing-list" type="checkbox" id="mailinglist"
+                /></span>
+              </div>
 
-            <div id="input2" class="col-lg-6 col-12">
-              <label for="message"><strong>Your Message:</strong></label>
-              <input name="message" type="text" id="message" max-length="280" required />
-              <button type="submit">Send Message</button>
-            </div>
-          </form>
+              <div id="input2">
+                <label for="message"><strong>Your Message:</strong></label>
+                <input
+                  spellcheck="true"
+                  name="message"
+                  type="text"
+                  id="message"
+                  max-length="280"
+                  size="280"
+                  required
+                />
+                <button type="submit">Send Message</button>
+              </div>
+            </form>
+          </fieldset>
         </div>
       </div>
     </section>

@@ -601,33 +601,47 @@ section h2.page-title {
 }
 
 form {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
 }
 
-#input1 ,
+#input1 {
+  margin-bottom: 20px;
+}
+
+#input1,
 #input2 {
-    margin-top: 25px;
-    padding-left: 20px;
-    padding-right: 20px;
+  margin-top: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 #input1 span label,
 #input1 span input {
-    display: inline-block;
-    margin-left: 0;
-    margin-right: 0;
-    width: 50%;
-    margin-top: 30px;
+  display: inline-block;
+  margin-left: 0;
+  margin-right: 0;
+  width: 50%;
+  margin-top: 30px;
 }
 
 #input1 span input {
-    width: 20px;
+  width: 20px;
+}
+
+#input2 input {
+  height: 150px;
 }
 
 #input2 button {
-  width: 100px;
+  margin-top: 10px;
+  width: 150px;
+  height: 50px;
+  color: #344b5c;
+  background-color: #7395ae;
   align-self: flex-end;
+  margin-right: 20%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -636,5 +650,22 @@ form {
     padding-left: 3%;
     padding-right: 3%;
     align-self: center;
+  }
+  #contact-address {
+    text-align: center;
+    padding: 0;
+    margin-top: 20px;
+  }
+  form {
+      flex-direction: column;
+  }
+  #input1,
+  #input2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #input2 {
+      margin-bottom: 30px;
   }
 }
