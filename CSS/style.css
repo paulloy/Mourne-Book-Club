@@ -467,8 +467,20 @@ section h2.page-title {
   padding-top: 15px;
 }
 
-.memberlist {
-  display: inline-block;
+#list {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.flex-list {
+  align-self: center;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 20px;
@@ -481,7 +493,6 @@ section h2.page-title {
 
 .members div {
   width: 100%;
-  display: inline-block;
   height: 120px;
   border-radius: 100%;
   object-fit: fill;
@@ -507,7 +518,16 @@ section h2.page-title {
 }
 
 #gallery {
-  display: block;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
   overflow: hidden;
   padding: 10px;
   border-right: 5px solid whitesmoke;
@@ -518,36 +538,23 @@ section h2.page-title {
 
 #gallery img {
   border: 1px solid #7395ae4f;
-  height: auto;
-  width: 15vw;
+  height: 200px;
+  max-width: 50%;
+  min-width: 50%;
   margin: 0;
   padding: 0;
   object-fit: cover;
-}
-
-@media only screen and (max-width: 1125px) {
-  #gallery img {
-    width: 30vw;
-  }
-}
-
-@media only screen and (max-width: 548px) {
-  #gallery img {
-    width: 43vw;
-  }
+  align-self: center;
 }
 
 @media only screen and (max-width: 390px) {
   .members {
-    width: 27vw;
+    width: 30vw;
     height: auto;
   }
   .members div {
     width: 27vw;
     height: 27vw;
-  }
-  #gallery img {
-    width: 42vw;
   }
 }
 
@@ -657,7 +664,7 @@ form {
     margin-top: 20px;
   }
   form {
-      flex-direction: column;
+    flex-direction: column;
   }
   #input1,
   #input2 {
@@ -666,6 +673,6 @@ form {
     width: 100%;
   }
   #input2 {
-      margin-bottom: 30px;
+    margin-bottom: 30px;
   }
 }
