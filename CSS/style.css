@@ -302,7 +302,7 @@ section h2:first-of-type {
 
 .flex1 {
   max-width: 30%;
-  min-width: 20%;
+  min-width: 30%;
   max-height: 100%;
   overflow: hidden;
   object-fit: fill;
@@ -331,7 +331,7 @@ section h2:first-of-type {
 }
 
 .flex2item1 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
 }
 
@@ -344,19 +344,22 @@ section h2:first-of-type {
   font-weight: 400;
 }
 
-@media only screen and (max-width: 569px) {
+@media only screen and (max-width: 650px) {
   .bookbox {
     flex-direction: column-reverse;
     justify-content: center;
   }
   .flex1 {
     max-height: 30%;
+    min-height: 30%;
+    min-width: 50%;
+    max-width: 50%;
   }
   .flex1 img {
     max-height: 100%;
-    min-width: 100%;
+    width: auto;
+    object-fit: fill;
     margin-bottom: 5%;
-    max-width: 100%;
   }
   .flex2 {
     max-height: 65%;
