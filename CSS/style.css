@@ -227,7 +227,9 @@ footer {
 /* ----------index.html---------- */
 
 #book-carousel {
+  display: block;
   width: 100%;
+  height: 375px;
   margin: 0 auto;
 }
 
@@ -238,7 +240,7 @@ section h2:first-of-type {
 }
 
 .carousel-item img {
-  max-height: 375px;
+  height: 375px;
   width: 100%;
   object-fit: cover;
 }
