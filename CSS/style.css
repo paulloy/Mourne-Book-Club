@@ -226,6 +226,11 @@ footer {
 
 /* ----------index.html---------- */
 
+#book-carousel {
+  width: 100%;
+  margin: 0 auto;
+}
+
 section h2:first-of-type {
   text-align: center;
   padding-top: 5px;
@@ -256,13 +261,13 @@ section h2:first-of-type {
 }
 
 #carousel-control-left {
-  left: 2%;
-  top: 40%;
+  left: 4%;
+  top: 45%;
 }
 
 #carousel-control-right {
-  right: 2%;
-  top: 40%;
+  right: 4%;
+  top: 45%;
 }
 
 #carousel-control-left:hover,
@@ -273,160 +278,67 @@ section h2:first-of-type {
 .cover {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.cover h4 {
-  padding-top: 3vh;
-  font-family: "Poppins", sans-serif;
-  color: white;
-}
-
-.bookbox {
+  background-color: rgba(0, 0, 0, 0.7);
   display: flex;
-  flex-wrap: wrap;
-  background-color: #1d2b35dc;
-  border: 8px solid #0d1318;
-  position: absolute;
-  border-radius: 5%;
-  height: 96%;
-  width: 50%;
-  left: 25%;
-  right: 25%;
-  top: 2%;
-  bottom: 2%;
-}
-
-.flex-item {
+  flex-wrap: nowrap;
+  align-items: center;
   justify-content: center;
 }
 
-.bookbox div p {
-  text-align: center;
-  width: 100%;
+.bookbox {
+  height: 94%;
+  min-width: 50%;
+  background-color: #1d2b35dc;
+  display: flex;
+  align-self: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .flex1 {
-  width: 100%;
-  font-size: 25px;
-  margin-top: -10px;
+  max-width: 30%;
+  min-width: 20%;
+  max-height: 100%;
+  overflow: hidden;
+  object-fit: fill;
+}
+
+.flex1 img {
+  height: 100%;
+  width: 75%;
 }
 
 .flex2 {
-  align-self: flex-start;
-  width: 30%;
-  padding-left: 40px;
+  max-width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-family: "Poppins", sans-serif;
 }
 
-.flex3 p:nth-child(2),
-.flex3 p:nth-child(4) {
-  font-style: italic;
+.flex2item0 {
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 200;
+  color: #84abc7;
+}
+
+.flex2item1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.flex2item2 {
   font-weight: 200;
 }
 
-.flex3 {
-  align-self: flex-start;
-  flex-basis: auto;
-  width: 70%;
-}
-
-.flex3 p {
-  text-align: left;
-}
-
-.flex4 {
-  width: 100%;
-  height: 25px;
-  align-self: center;
-}
-
-.flex4 button {
-  z-index: 1000;
-}
-
-.bookbox img {
-  /* position: absolute;
-    top: 20%;
-    bottom: 20%;
-    left: 10%; */
-  width: 112px;
-  height: auto;
-}
-
-.bookbox button {
-  font-family: arial;
-  font-weight: 700;
-  color: #1c2933;
-  background-color: #5d829e;
-  border: 0;
-  border-radius: 8%;
-  /* display: inline-block;
-    position: absolute; 
-    bottom: 30px;
-    right: 40%;
-    z-index: auto; */
-}
-
-#book-carousel {
-  width: 95%;
-  margin: 0 auto;
-}
-
-@media only screen and (max-width: 991px) {
-  .bookbox {
-    width: 70%;
-    left: 15%;
-    right: 15%;
-  }
-  .flex1 {
-    font-size: 2.5vw;
-  }
-}
-
-@media only screen and (max-width: 725px) {
-  .bookbox {
-    width: 84%;
-    left: 8%;
-    right: 8%;
-  }
-  #carousel-control-left,
-  #carousel-control-right {
-    font-size: 5vw;
-  }
-  #carousel-control-left {
-    left: 15%;
-  }
-  #carousel-control-right {
-    right: 15%;
-  }
-  .flex1 {
-    font-size: 15px;
-  }
-  .flex2 {
-    margin-top: -10px;
-    margin-bottom: 10px;
-    height: 140px;
-    width: 100%;
-    overflow: hidden;
-    object-fit: fill;
-  }
-  .flex2 img {
-    height: 100px;
-    width: auto;
-    max-width: 150px;
-    object-fit: fill;
-  }
-  .flex3 {
-    width: 100%;
-    font-size: 12px;
-    margin-top: -10px;
-  }
-  .flex3 p {
-    margin-bottom: 5px;
-  }
-  .carousel-item img {
-    height: 475px;
-  }
+.flex2item2 p:nth-of-type(1),
+.flex2item2 p:nth-of-type(3) {
+  font-weight: 400;
 }
 
 /* ----------/index.html---------- */
@@ -647,8 +559,7 @@ form {
   height: 50px;
   color: #344b5c;
   background-color: #7395ae;
-  align-self: flex-end;
-  margin-right: 20%;
+  align-self: center;
 }
 
 @media only screen and (max-width: 768px) {
