@@ -288,7 +288,7 @@ section h2:first-of-type {
 }
 
 .bookbox {
-  height: 94%;
+  height: 92%;
   min-width: 65%;
   max-width: 65%;
   background-color: #1d2b35dc;
@@ -344,6 +344,91 @@ section h2:first-of-type {
   font-weight: 400;
 }
 
+#book-links {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 50px;
+  flex-wrap: wrap;
+  text-align: center;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+#book-links div {
+  display: block;
+  width: 20%;
+  height: 100%;
+}
+
+#book-links div:nth-of-type(1) {
+  background-color: #444c5c;
+}
+#book-links div:nth-of-type(2) {
+  background-color: #ce5a57;
+}
+#book-links div:nth-of-type(3) {
+  background-color: #78a5a3;
+}
+#book-links div:nth-of-type(4) {
+  background-color: #e1b16a;
+}
+#book-links div:nth-of-type(5) {
+  background-color: #aaaaaa;
+}
+
+#book-links div a {
+  display: inline-block;
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+}
+
+#homesection2 {
+  text-align: center;
+}
+
+#collapse-book-list {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  background-color: #1d2b35dc;
+  width: 100%;
+  height: 47px;
+  text-align: center;
+}
+
+#collapse-book-list p {
+    color: white;
+    font-size: 98%;
+}
+
+#collapse-book-list i {
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  left: 1%;
+  right: 1%;
+  top: 3px;
+}
+
+#collapse-book-list:hover {
+    background-color: #344b5c;
+}
+
+@media only screen and (max-width: 900px) {
+    #book-links {
+        flex-direction: column;        
+        height: 250px;
+    }
+    #book-links div {
+        width: 100%;
+        height: 20%;
+    }
+}
+
 @media only screen and (max-width: 650px) {
   .bookbox {
     flex-direction: column-reverse;
@@ -383,7 +468,7 @@ section h2:first-of-type {
   }
   #carousel-control-left,
   #carousel-control-right {
-      font-size: 30px;
+    font-size: 30px;
   }
 }
 
