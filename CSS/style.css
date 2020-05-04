@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Raleway:wght@200;300;400;500;600;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@100;200;300;400;500;600;700;800;900&display=swap");
 /* ----------Header---------- */
 
 #header {
   padding: 0;
-  border: 5px solid whitesmoke;
-  background-color: #7395ae;
+  background-color: #91a19a;
+  box-shadow: 0 3px 4px grey;
 }
 
 /* ----------Navbar Toggler---------- */
@@ -15,20 +14,18 @@
 }
 
 #toggle-icon {
-  border: 1px solid #344b5c;
-  color: #344b5c;
-  padding: 8px;
-  border-radius: 25%;
+  color: #2f312c;
 }
 
 #toggle-icon i {
-  position: relative;
-  left: -3px;
-  top: -5px;
+  padding: 5px;
+  border: 1px solid #2f312c;
+  border-radius: 10px;
 }
 
-#toggle-icon:hover {
-  background-color: #5d829e;
+#toggle-icon i:hover {
+  background-color: rgba(47, 49, 44, 0.2);
+  color: rgba(47, 49, 44);
 }
 
 /* ----------/navbar Toggler---------- */
@@ -47,15 +44,9 @@
   padding: 0;
 }
 
-#logo a h2 {
-  text-align: center;
-  font-family: "Playfair Display", serif;
-  font-weight: 700;
-  display: block;
-  padding: 0;
-  font-size: 44px;
-  margin: 0;
-  color: #344b5c;
+#logo a img {
+  height: 50px;
+  padding: 5px;
 }
 
 /* ----------/logo---------- */
@@ -67,22 +58,33 @@
 }
 
 #menu li {
-  padding: 12px 6px 12px 6px;
+  padding: 12px 0px 12px 0px;
 }
 
 #menu li a {
   text-transform: uppercase;
   text-decoration: none;
   list-style-type: none;
-  font-size: 22px;
+  font-size: 20px;
   font-family: "Poppins", sans-serif;
-  color: #344b5c;
-  margin-left: 20px;
+  color: #2f312c;
+  margin-left: 1vw;
+}
+
+#menu li a i {
+  font-size: 16px;
 }
 
 /* ----------/navbar---------- */
 
 /* ----------Media---------- */
+
+#menu li a:hover {
+  background-color: rgba(47, 49, 44, 0.2);
+  padding: 6px 8px 6px 8px;
+  box-shadow: 0 4px 4px grey;
+  border-radius: 10px;
+}
 
 @media only screen and (max-width: 991px) {
   #menu {
@@ -99,16 +101,17 @@
     margin-left: 0;
   }
   #collapseNav {
-    border-top: 2px solid whitesmoke;
-    background-color: #5d829e;
+    border-top: 2px solid #EFF7F9;
+    background-color: #91a19a;
+  }
+  #menu li a:hover {
+  background-color: rgba(47, 49, 44, 0.2);
+  padding: 6px 8px 6px 8px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px;
   }
 }
 
-#menu li a:hover {
-  color: #5d829e;
-  background-color: #344b5c;
-  padding: 6px 8px 6px 8px;
-}
 
 @media only screen and (max-width: 569px) {
   #nav-button {
@@ -117,8 +120,8 @@
   #logo {
     margin-left: 5px;
   }
-  #logo a h2 {
-    font-size: 7vw;
+  #logo a img {
+      height: 9vw;
   }
   #menu li {
     margin-right: 2vw;
@@ -129,6 +132,17 @@
   #menu li a:hover {
     padding: 6px 8px 6px 8px;
   }
+  #toggle-icon i {
+      font-size: 15px;
+      border-radius: 7px;
+      padding: 4px;
+  }
+}
+
+@media only screen and (max-width: 374px) {
+    #logo a img {
+        height: 31px;
+    }
 }
 
 /* ----------/media---------- */
@@ -401,8 +415,8 @@ section h2:first-of-type {
 }
 
 #collapse-book-list p {
-    color: white;
-    font-size: 98%;
+  color: white;
+  font-size: 98%;
 }
 
 #collapse-book-list i {
@@ -415,18 +429,18 @@ section h2:first-of-type {
 }
 
 #collapse-book-list:hover {
-    background-color: #344b5c;
+  background-color: #344b5c;
 }
 
 @media only screen and (max-width: 900px) {
-    #book-links {
-        flex-direction: column;        
-        height: 250px;
-    }
-    #book-links div {
-        width: 100%;
-        height: 20%;
-    }
+  #book-links {
+    flex-direction: column;
+    height: 250px;
+  }
+  #book-links div {
+    width: 100%;
+    height: 20%;
+  }
 }
 
 @media only screen and (max-width: 650px) {
