@@ -1,0 +1,22 @@
+/* ----------faq.html---------- */
+
+#QandA div {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#QandA div h2 {
+  margin-top: 10px;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 480px) {
+  section h2.page-title {
+    font-size: 6vw;
+    border-bottom: 1px solid #1c2933;
+  }
+}
+
+/* ----------/faq.html---------- */

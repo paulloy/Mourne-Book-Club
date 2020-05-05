@@ -1,0 +1,134 @@
+
+/* ----------contact.html---------- */
+
+#google-map iframe {
+  width: 125%;
+  height: 300px;
+  align-self: center;
+  padding-left: 5%;
+}
+
+#contact-address {
+  text-align: left;
+  font-size: 15px;
+  padding-left: 18vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#input1,
+#input2 {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: 100%;
+}
+
+#name,
+#email,
+#number,
+#mailinglist,
+#message {
+  width: 80%;
+  align-self: center;
+}
+
+#input1 label,
+#input2 label {
+  margin: 8px 0 8px 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+}
+
+#input1 input,
+#input2 textarea {
+  width: 90%;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+#input1 #name,
+#input1 #email,
+#input1 #phone,
+#input2 textarea {
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px grey;
+  border: 1px solid grey;
+}
+
+form {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+
+#input1 {
+  margin-bottom: 20px;
+}
+
+#input1,
+#input2 {
+  margin-top: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#input1 span label,
+#input1 span input {
+  display: inline-block;
+  margin-left: 0;
+  margin-right: 0;
+  width: 50%;
+  margin-top: 30px;
+}
+
+#input1 span input {
+  width: 20px;
+}
+
+#input2 textarea {
+  height: 150px;
+}
+
+#input2 button {
+  margin-top: 10px;
+  width: 150px;
+  height: 50px;
+  color: #2f312c;
+  align-self: center;
+  border: 2px solid grey;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px grey;
+  background-color: #eff7f9;
+}
+
+#input2 button:hover {
+  background-color: rgba(47, 49, 44, 0.2);
+}
+
+@media only screen and (max-width: 768px) {
+  #google-map iframe {
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+    align-self: center;
+  }
+  #contact-address {
+    text-align: center;
+    padding: 0;
+    margin-top: 20px;
+  }
+  form {
+    flex-direction: column;
+  }
+  #input1,
+  #input2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #input2 {
+    margin-bottom: 30px;
+  }
+}

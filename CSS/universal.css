@@ -1,0 +1,237 @@
+/* ----------Header---------- */
+
+#header {
+  padding: 0;
+  background-color: #91a19a;
+  box-shadow: 0 3px 4px grey;
+}
+
+/* ----------Navbar Toggler---------- */
+
+#nav-button {
+  margin-right: 30px;
+}
+
+#toggle-icon {
+  color: #2f312c;
+}
+
+#toggle-icon i {
+  padding: 5px;
+  border: 1px solid #2f312c;
+  border-radius: 10px;
+}
+
+#toggle-icon i:hover {
+  background-color: rgba(47, 49, 44, 0.2);
+  color: rgba(47, 49, 44);
+}
+
+/* ----------/navbar Toggler---------- */
+
+/* ----------Logo---------- */
+
+#logo {
+  margin-left: 30px;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#logo a {
+  text-decoration: none;
+  padding: 0;
+}
+
+#logo a img {
+  height: 50px;
+  padding: 5px;
+}
+
+/* ----------/logo---------- */
+
+/* ----------Navbar---------- */
+
+#menu {
+  margin-right: 30px;
+}
+
+#menu li {
+  padding: 12px 0px 12px 0px;
+}
+
+#menu li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  color: #2f312c;
+  margin-left: 1vw;
+}
+
+#menu li a i {
+  font-size: 16px;
+}
+
+/* ----------/navbar---------- */
+
+/* ----------Media---------- */
+
+#menu li a:hover {
+  background-color: rgba(47, 49, 44, 0.2);
+  padding: 6px 8px 6px 8px;
+  box-shadow: 0 4px 4px grey;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 991px) {
+  #menu {
+    margin-right: 0;
+  }
+  #menu li {
+    display: block;
+    text-align: right;
+    margin-right: 40px;
+    padding: 0;
+  }
+  #menu li a {
+    padding: 6px 8px 6px 8px;
+    margin-left: 0;
+  }
+  #collapseNav {
+    border-top: 2px solid #eff7f9;
+    background-color: #91a19a;
+  }
+  #menu li a:hover {
+    background-color: rgba(47, 49, 44, 0.2);
+    padding: 6px 8px 6px 8px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px;
+  }
+}
+
+@media only screen and (max-width: 569px) {
+  #nav-button {
+    margin-right: 5px;
+  }
+  #logo {
+    margin-left: 5px;
+  }
+  #logo a img {
+    height: 9vw;
+  }
+  #menu li {
+    margin-right: 2vw;
+  }
+  #menu li a {
+    font-size: 4vw;
+  }
+  #menu li a:hover {
+    padding: 6px 8px 6px 8px;
+  }
+  #toggle-icon i {
+    font-size: 15px;
+    border-radius: 7px;
+    padding: 4px;
+  }
+}
+
+@media only screen and (max-width: 374px) {
+  #logo a img {
+    height: 31px;
+  }
+}
+
+/* ----------/media---------- */
+
+/* ----------/header---------- */
+
+
+/* ----------Footer---------- */
+
+footer {
+  background-color: #91a19a;
+  font-family: "Poppins", sans-serif;
+  color: #2f312c;
+  font-size: 13px;
+}
+
+#foot #address,
+#foot #socialmedia {
+  text-align: center;
+  height: 100px;
+  padding-top: 10px;
+  display: block;
+}
+
+#copyright {
+  position: relative;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+}
+
+#copyright p {
+  position: absolute;
+  right: 15px;
+  bottom: 0;
+}
+
+#address {
+  position: relative;
+  text-align: center;
+}
+
+#address div {
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+#socialmedia p {
+  font-size: 15px;
+}
+
+#socialmedia ul li a i {
+  padding: 2px;
+  border: 1px solid #2f312c;
+  border-radius: 20%;
+}
+
+#socialmedia ul li a i {
+  color: #2f312c;
+  font-size: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#socialmedia ul li a #fb:hover {
+  color: #3b5998;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#socialmedia ul li a #tt:hover {
+  color: #08a0e9;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#socialmedia ul li a #yt:hover {
+  color: #c4302b;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+@media only screen and (max-width: 991px) {
+  #socialmedia {
+    border-bottom: 1px solid #2f312c;
+  }
+}
+
+@media only screen and (max-width: 569px) {
+  #copyright {
+    height: 80px;
+  }
+  footer {
+    font-size: 12px;
+  }
+}
+
+/* ----------/footer---------- */
