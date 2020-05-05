@@ -8,6 +8,11 @@ section {
 
 /* ----------Header---------- */
 
+#active-page {
+    background-color: rgba(47, 49, 44, 0.2);
+    border-radius: 10px;
+}
+
 #header {
   padding: 0;
   background-color: #91a19a;
@@ -158,7 +163,6 @@ section {
 /* ----------Footer---------- */
 
 footer {
-  box-shadow: 0 0 3px 4px grey;
   background-color: #91a19a;
   font-family: "Poppins", sans-serif;
   color: #2f312c;
@@ -452,19 +456,21 @@ section h2:first-of-type {
   display: block;
   position: relative;
   text-decoration: none;
-  background-color: #775a45;
+  background-color: rgba(145, 161, 154, 0.6);
   width: 100%;
   height: 47px;
   text-align: center;
+  box-shadow: 0 2px 5px rgb(0, 0, 15);
 }
 
 #collapse-book-list p {
-  color: #eff7f9;
+  color: #2F312C;
   font-size: 98%;
+  font-weight: 700;
 }
 
 #collapse-book-list i {
-  color: #eff7f9;
+  color: #2F312C;
   font-size: 40px;
   position: absolute;
   left: 1%;
@@ -572,7 +578,7 @@ section h2:first-of-type {
 /* ----------/index.html---------- */
 
 section {
-  background-color: #d7dfe0;
+  background-color: rgba(145, 161, 154, 0.25);
   font-family: "Poppins", sans-serif;
   color: #2f312c;
 }
@@ -603,8 +609,11 @@ section {
 /* ----------members.html---------- */
 
 section h2.page-title {
-  padding-bottom: 15px;
-  padding-top: 15px;
+  padding-bottom: 5px;
+  padding-top: 10px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 28px;
 }
 
 #list {
@@ -741,7 +750,7 @@ section h2.page-title {
 }
 
 #input1 input,
-#input2 input {
+#input2 textarea {
   width: 90%;
   margin-right: 5%;
   margin-left: 5%;
@@ -750,7 +759,7 @@ section h2.page-title {
 #input1 #name,
 #input1 #email,
 #input1 #phone,
-#input2 input {
+#input2 textarea {
   border-radius: 5px;
   box-shadow: 2px 2px 2px grey;
   border: 1px solid grey;
@@ -786,7 +795,7 @@ form {
   width: 20px;
 }
 
-#input2 input {
+#input2 textarea {
   height: 150px;
 }
 
