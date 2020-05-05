@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Raleway:wght@200;300;400;500;600;700;800&display=swap");
 
 section {
-  background-color: #eff7f9;
+  background-color: #f0f8fa;
   color: #2f312c;
-  padding: 20px 0 20px 0;
+  padding-top: 20px;
 }
 
 /* ----------Header---------- */
@@ -340,7 +340,7 @@ section h2:first-of-type {
   flex-direction: column;
   justify-content: space-evenly;
   font-family: "Poppins", sans-serif;
-  color: #EFF7F9;
+  color: #eff7f9;
 }
 
 .flex2item0 {
@@ -348,7 +348,7 @@ section h2:first-of-type {
   letter-spacing: 2px;
   text-transform: uppercase;
   font-weight: 200;
-  color: rgb(196, 187, 171);
+  color: rgb(213, 224, 196);
 }
 
 .flex2item1 {
@@ -383,51 +383,88 @@ section h2:first-of-type {
 }
 
 #book-links div:nth-of-type(1) {
-  background-color: #775A45;
+  background-color: #775a45;
 }
 #book-links div:nth-of-type(2) {
-  background-color: #2F312C;
+  background-color: #2f312c;
 }
 #book-links div:nth-of-type(3) {
-  background-color: #775A45;
+  background-color: #775a45;
 }
 #book-links div:nth-of-type(4) {
-  background-color: #2F312C;
+  background-color: #2f312c;
 }
 #book-links div:nth-of-type(5) {
-  background-color: #775A45;
+  background-color: #775a45;
 }
 
 #book-links div a {
   display: inline-block;
-  color: #EFF7F9;
+  color: #eff7f9;
   font-size: 15px;
   text-decoration: none;
   height: 100%;
   width: 100%;
 }
 
+#background {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  background-image: url("../../img/pexels-photo-207662.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
 #homesection2 {
   text-align: center;
+  width: 70%;
+  height: auto;
+  display: block;
+  margin: 25px 0 25px 0;
+  padding: 20px;
+  background-color: rgba(240, 248, 250, 0.904);
+  border-radius: 30px;
+  box-shadow: 10px 10px grey;
+}
+
+#testimonial-image1,
+#testimonial-image2,
+#testimonial-image3 {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+#homesection2 article {
+  margin-bottom: 25px;
+}
+
+#homesection2 h2 {
+  margin-top: 20px;
 }
 
 #collapse-book-list {
   display: block;
   position: relative;
   text-decoration: none;
-  background-color: #775A45;
+  background-color: #775a45;
   width: 100%;
   height: 47px;
   text-align: center;
 }
 
 #collapse-book-list p {
-  color: #EFF7F9;
+  color: #eff7f9;
   font-size: 98%;
 }
 
 #collapse-book-list i {
-  color: #EFF7F9;
+  color: #eff7f9;
   font-size: 40px;
   position: absolute;
   left: 1%;
@@ -440,6 +477,9 @@ section h2:first-of-type {
 }
 
 @media only screen and (max-width: 900px) {
+  #homesection2 {
+    width: 80%;
+  }
   #book-links {
     flex-direction: column;
     height: 250px;
@@ -451,6 +491,22 @@ section h2:first-of-type {
 }
 
 @media only screen and (max-width: 650px) {
+  #homesection2 {
+    width: 95%;
+  }
+  #homesection2 article {
+    font-size: 15px;
+  }
+  #homesection2 h2 {
+    font-size: 25px;
+  }
+  #testimonial-image1,
+  #testimonial-image2,
+  #testimonial-image3 {
+    width: 40px;
+    height: 40px;
+  }
+
   .bookbox {
     flex-direction: column-reverse;
     justify-content: center;
@@ -493,12 +549,32 @@ section h2:first-of-type {
   }
 }
 
+@media only screen and (max-width: 450px) {
+  #homesection2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+  #homesection2 article {
+    font-size: 12px;
+  }
+  #homesection2 h2 {
+    font-size: 22px;
+  }
+  #testimonial-image1,
+  #testimonial-image2,
+  #testimonial-image3 {
+    width: 0;
+    height: 0;
+  }
+}
+
 /* ----------/index.html---------- */
 
 section {
-  background-color: #EFF7F9;
+  background-color: #d7dfe0;
   font-family: "Poppins", sans-serif;
-  color: #2F312C;
+  color: #2f312c;
 }
 
 /* ----------faq.html---------- */
@@ -680,7 +756,6 @@ section h2.page-title {
   border: 1px solid grey;
 }
 
-
 form {
   display: flex;
   width: 100%;
@@ -719,12 +794,12 @@ form {
   margin-top: 10px;
   width: 150px;
   height: 50px;
-  color: #2F312C;
+  color: #2f312c;
   align-self: center;
   border: 2px solid grey;
-  border-radius: 20px;  
+  border-radius: 20px;
   box-shadow: 2px 2px 2px grey;
-  background-color: #EFF7F9;
+  background-color: #eff7f9;
 }
 
 #input2 button:hover {
