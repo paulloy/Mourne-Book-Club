@@ -8,12 +8,6 @@
   margin: 0 auto;
 }
 
-section h2:first-of-type {
-  text-align: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
 .carousel-item img {
   height: 375px;
   width: 100%;
