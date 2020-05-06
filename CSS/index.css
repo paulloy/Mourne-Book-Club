@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* ----------index.html---------- */
 
@@ -7,6 +7,8 @@
   width: 100%;
   height: 375px;
   margin: 0 auto;
+  padding-bottom: 15px;
+  background-color: grey;
 }
 
 .carousel-item img {
@@ -34,7 +36,7 @@
 
 #carousel-control-left {
   left: 6%;
-  bottom: 45%;  
+  bottom: 45%;
 }
 
 #carousel-control-right {
@@ -52,7 +54,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   display: flex;
-  flex-wrap: nowrap;
+  /*flex-wrap: nowrap;*/
   align-items: center;
   justify-content: center;
 }
@@ -161,11 +163,14 @@
   width: 100%;
 }
 
-#background {
+#coverbackground {
   width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#background-photo {
+  display: block;
   background-image: url("../../img/pexels-photo-207662.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -173,7 +178,69 @@
   background-attachment: fixed;
 }
 
-#homesection2 {
+#background {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+  flex-wrap: wrap;
+  padding: 30px 0 30px 0;
+}
+
+#box1,
+#box2 {
+  width: 50%;
+  padding: 20px;
+  height: auto;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+#box3 {
+  width: 100%;
+  padding: 20px;
+  height: auto;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+#box1 span,
+#box2 span,
+#box3 span {
+  background-color: #effcffe1;
+  width: 40vw;
+  display: block;
+  text-align: center;
+  padding: 30px;
+  border-radius: 30px;
+  box-shadow: 10px 10px grey;
+}
+
+#box1 span div {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  margin-top: 15px;
+  background-image: url("../../img/4173828699_c02d56200e_b.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#box2 span div {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  margin-top: 15px;
+  background-image: url("../../img/The_Cloughmore_Stone.Rostrevor_-_panoramio.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.homesection2 {
   text-align: center;
   width: 70%;
   height: auto;
@@ -205,22 +272,28 @@
 #collapse-book-list {
   display: block;
   position: relative;
-  text-decoration: none;
-  background-color: rgba(145, 161, 154, 0.6);
+  background-color: transparent;
   width: 100%;
-  height: 47px;
+  height: 50px;
   text-align: center;
-  box-shadow: 0 2px 5px rgb(0, 0, 15);
 }
 
-#collapse-book-list p {
-  color: #2F312C;
+#collapse-book-list a {
+  text-decoration: none;
+  width: 20%;
+  background-color: rgb(170, 170, 170);
+  border-radius: 0 0 50px 50px;
+  height: 100%;
+}
+
+#collapse-book-list a p {
+  color: #2f312c;
   font-size: 98%;
   font-weight: 700;
 }
 
-#collapse-book-list i {
-  color: #2F312C;
+#collapse-book-list a i {
+  color: #2f312c;
   font-size: 40px;
   position: absolute;
   left: 1%;
@@ -228,7 +301,7 @@
   top: 3px;
 }
 
-#collapse-book-list:hover {
+#collapse-book-list a:hover {
   background-color: rgba(119, 90, 69, 0.856);
 }
 
@@ -247,6 +320,18 @@
 }
 
 @media only screen and (max-width: 650px) {
+  #background {
+    flex-direction: column;
+  }
+  #box1,
+  #box2 {
+    width: 100%;
+  }
+  #box1 span,
+  #box2 span,
+  #box3 span {
+    width: 80%;
+  }
   #homesection2 {
     width: 95%;
   }
@@ -307,16 +392,16 @@
 }
 
 @media only screen and (max-width: 450px) {
-   .bookbox {
-       min-width: 92%;
-       max-width: 92%;
-   } 
-    #carousel-control-left {
-        left: 10%;
-    }
-    #carousel-control-right {
-        right: 10%;
-    }
+  .bookbox {
+    min-width: 92%;
+    max-width: 92%;
+  }
+  #carousel-control-left {
+    left: 10%;
+  }
+  #carousel-control-right {
+    right: 10%;
+  }
   #homesection2 {
     width: 100%;
     height: 100%;
