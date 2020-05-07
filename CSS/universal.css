@@ -5,6 +5,11 @@ body {
   background-color: #eff7f9;
 }
 
+#page-title {
+    text-align: center;
+    padding: 15px;
+}
+
 /* ----------Header---------- */
 
 #active-page {
@@ -257,7 +262,7 @@ footer {
 @media only screen and (max-width: 619px) {
   #page-title {
     font-size: 5.5vw;
-    padding-top: 5px;
+    padding: 10px;
     letter-spacing: 1px;
   }
 }
