@@ -7,8 +7,8 @@
   width: 100%;
   height: 375px;
   margin: 0 auto;
-  padding-bottom: 15px;
-  background-color: grey;
+  margin-bottom: 30px;
+  background-color: #eff7f9;
 }
 
 .carousel-item img {
@@ -219,6 +219,14 @@
   box-shadow: 10px 10px grey;
 }
 
+#box3 span {
+  width: 75vw;
+}
+
+#box3 span article img {
+  margin: 15px;
+}
+
 #box1 span div {
   width: 100%;
   height: 300px;
@@ -228,6 +236,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  border-radius: 10px;
 }
 #box2 span div {
   width: 100%;
@@ -238,18 +247,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  border-radius: 10px;
 }
 
-.homesection2 {
-  text-align: center;
-  width: 70%;
-  height: auto;
-  display: block;
-  margin: 25px 0 25px 0;
-  padding: 20px;
-  background-color: rgba(240, 248, 250, 0.904);
-  border-radius: 30px;
-  box-shadow: 10px 10px grey;
+#box3 span article {
+  margin-bottom: 20px;
 }
 
 #testimonial-image1,
@@ -259,14 +261,6 @@
   height: 60px;
   width: 60px;
   border-radius: 50%;
-}
-
-#homesection2 article {
-  margin-bottom: 25px;
-}
-
-#homesection2 h2 {
-  margin-top: 20px;
 }
 
 #collapse-book-list {
@@ -280,7 +274,7 @@
 
 #collapse-book-list a {
   text-decoration: none;
-  width: 20%;
+  width: 200px;
   background-color: rgb(170, 170, 170);
   border-radius: 0 0 50px 50px;
   height: 100%;
@@ -306,9 +300,6 @@
 }
 
 @media only screen and (max-width: 900px) {
-  #homesection2 {
-    width: 80%;
-  }
   #book-links {
     flex-direction: column;
     height: 250px;
@@ -317,9 +308,6 @@
     width: 100%;
     height: 20%;
   }
-}
-
-@media only screen and (max-width: 650px) {
   #background {
     flex-direction: column;
   }
@@ -332,20 +320,34 @@
   #box3 span {
     width: 80%;
   }
-  #homesection2 {
-    width: 95%;
-  }
-  #homesection2 article {
-    font-size: 15px;
-  }
-  #homesection2 h2 {
-    font-size: 25px;
-  }
+}
+
+@media only screen and (max-width: 650px) {
   #testimonial-image1,
   #testimonial-image2,
   #testimonial-image3 {
     width: 40px;
     height: 40px;
+    margin: 0;
+  }
+  #box1 span,
+  #box2 span,
+  #box3 span {
+    width: 100%;
+  }
+  #box1 span div,
+  #box2 span div {
+    height: 150px;
+  }
+  #box1,
+  #box2,
+  #box3 {
+    font-size: 13px;
+  }
+  #box1 span h2,
+  #box2 span h2,
+  #box3 span h2 {
+    font-size: 20px;
   }
 
   .bookbox {
@@ -402,22 +404,10 @@
   #carousel-control-right {
     right: 10%;
   }
-  #homesection2 {
-    width: 100%;
-    height: 100%;
-    border-radius: 0;
-  }
-  #homesection2 article {
-    font-size: 12px;
-  }
-  #homesection2 h2 {
-    font-size: 22px;
-  }
-  #testimonial-image1,
-  #testimonial-image2,
-  #testimonial-image3 {
-    width: 0;
-    height: 0;
+  #box1 span,
+  #box2 span,
+  #box3 span {
+    padding: 15px;
   }
 }
 
