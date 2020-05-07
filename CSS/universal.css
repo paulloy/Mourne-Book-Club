@@ -1,16 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #eff7f9;
+  font-family: "Poppins", sans-serif;
+  background-color: #eff7f9;
 }
-
 
 /* ----------Header---------- */
 
 #active-page {
-    background-color: rgba(47, 49, 44, 0.2);
-    border-radius: 10px;
+  background-color: rgba(47, 49, 44, 0.2);
+  border-radius: 10px;
 }
 
 #header {
@@ -160,22 +159,20 @@ body {
 
 /* ----------/header---------- */
 
-
 /* ----------Footer---------- */
 
 footer {
   background-color: #91a19a;
   font-family: "Poppins", sans-serif;
   color: #2f312c;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 #foot #address,
 #foot #socialmedia {
   text-align: center;
-  height: 100px;
-  padding-top: 10px;
-  display: block;
+  height: 150px;
+  padding-top: 30px;
 }
 
 #copyright {
@@ -187,80 +184,80 @@ footer {
 
 #copyright p {
   position: absolute;
-  right: 15px;
+  right: 20px;
   bottom: 0;
 }
 
 #address {
-  position: relative;
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 #address div {
-  font-size: 15px;
   margin: 0;
   padding: 0;
+  width: 50%;
 }
 
-#socialmedia p {
-  font-size: 15px;
+#socialmedia ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
 }
 
-#socialmedia ul li a i {
-  padding: 2px;
-  border: 1px solid #2f312c;
-  border-radius: 20%;
-}
-
-#socialmedia ul li a i {
+#socialmedia ul li a {
+  text-decoration: none;
+  font-size: 50px;
   color: #2f312c;
-  font-size: 30px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 15px;
 }
 
 #socialmedia ul li a #fb:hover {
   color: #3b5998;
-  background-color: rgba(255, 255, 255, 0.5);
 }
 #socialmedia ul li a #tt:hover {
   color: #08a0e9;
-  background-color: rgba(255, 255, 255, 0.5);
 }
 #socialmedia ul li a #yt:hover {
   color: #c4302b;
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
-@media only screen and (max-width: 991px) {
-  #socialmedia {
-    border-bottom: 1px solid #2f312c;
-  }
 }
 
 @media only screen and (max-width: 569px) {
-  #copyright {
-    height: 80px;
+  #address {
+    flex-direction: column;
   }
-  footer {
-    font-size: 12px;
+  #address div {
+    width: 100%;
+    padding-top: 60px;
+    height: 200px;
+  }
+    footer {
+      font-size: 13px;
+      height: 450px;
+    }
+    #copyright {
+        height: 150px;
+    }
   }
 }
 
 /* ----------/footer---------- */
 
 #page-title {
-    text-align: center;
-    font-size: 30px;
-    font-weight: 600;
-    padding: 15px 0 15px 0;
-    letter-spacing: 0;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 15px 0 15px 0;
+  letter-spacing: 0;
 }
 
 @media only screen and (max-width: 619px) {
-    #page-title {
-        font-size: 5.5vw;
-        padding-top: 20px;
-        letter-spacing: 1px;
-    }
+  #page-title {
+    font-size: 5.5vw;
+    padding-top: 5px;
+    letter-spacing: 1px;
+  }
 }
