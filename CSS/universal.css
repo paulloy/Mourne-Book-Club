@@ -19,8 +19,7 @@ body {
 
 #header {
   padding: 0;
-  background-color:rgba(114, 109, 96, 0.726);
- /* box-shadow: 0 3px 4px grey; */
+  background-color:rgba(114, 109, 96, 0.55);
 }
 
 /* ----------Navbar Toggler---------- */
@@ -156,7 +155,7 @@ body {
 
 @media only screen and (max-width: 374px) {
   #logo a img {
-    height: 32px;
+    height: 30px;
   }
 }
 
@@ -167,7 +166,7 @@ body {
 /* ----------Footer---------- */
 
 footer {
-  background-color: rgba(114, 109, 96, 0.78);
+  background-color: rgba(114, 109, 96, 0.55);
   font-family: "Poppins", sans-serif;
   color: #2f312c;
   font-size: 15px;

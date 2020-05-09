@@ -3,8 +3,7 @@
 /* ----------faq.html---------- */
 
 #QandA div {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 30px;
 }
 
 #QandA div h2 {
