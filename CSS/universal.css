@@ -2,7 +2,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: transparent;
+  background-color: #dae8ec;
 }
 
 #page-title {
@@ -13,13 +13,13 @@ body {
 /* ----------Header---------- */
 
 #active-page {
-  background-color: rgba(47, 49, 44, 0.2);
+  background-color: rgba(114, 109, 96, 0.5);
   border-radius: 10px;
 }
 
 #header {
   padding: 0;
-  background-color: #576672b9;
+  background-color:rgba(114, 109, 96, 0.726);
  /* box-shadow: 0 3px 4px grey; */
 }
 
@@ -83,7 +83,7 @@ body {
   list-style-type: none;
   font-size: 20px;
   font-family: "Poppins", sans-serif;
-  color: #34373b;
+  color: #2f312c;
   margin-left: 2vw;
 }
 
@@ -96,9 +96,9 @@ body {
 /* ----------Media---------- */
 
 #menu li a:hover {
-  background-color: rgba(47, 49, 44, 0.2);
+  background-color: rgba(114, 109, 96, 0.5);
   padding: 6px 8px 6px 8px;
-  box-shadow: 0 4px 4px grey;
+  box-shadow: 0 4px 4px rgba(66, 63, 56, 0.5);
   border-radius: 10px;
 }
 
@@ -117,11 +117,11 @@ body {
     margin-left: 0;
   }
   #collapseNav {
-    border-top: 2px solid #eff7f9;
-    background-color: #91a19a;
+    border-top: 2px solid #dae8ec;
+    background-color: rgba(114, 109, 96, 0.5);
   }
   #menu li a:hover {
-    background-color: rgba(47, 49, 44, 0.2);
+    background-color: rgba(114, 109, 96, 0.5);
     padding: 6px 8px 6px 8px;
     border-radius: 10px;
     box-shadow: 0px 0px 0px;
@@ -167,9 +167,9 @@ body {
 /* ----------Footer---------- */
 
 footer {
-  background-color: #38291e;
+  background-color: rgba(114, 109, 96, 0.78);
   font-family: "Poppins", sans-serif;
-  color: #dae8ec;
+  color: #2f312c;
   font-size: 15px;
 }
 
@@ -216,7 +216,7 @@ footer {
 #socialmedia ul li a {
   text-decoration: none;
   font-size: 50px;
-  color: #dae8ec;
+  color: #2f312c;
   margin: 15px;
 }
 
