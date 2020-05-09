@@ -2,7 +2,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #eff7f9;
+  background-color: transparent;
 }
 
 #page-title {
@@ -19,8 +19,8 @@ body {
 
 #header {
   padding: 0;
-  background-color: #91a19a;
-  box-shadow: 0 3px 4px grey;
+  background-color: #576672b9;
+ /* box-shadow: 0 3px 4px grey; */
 }
 
 /* ----------Navbar Toggler---------- */
@@ -83,8 +83,8 @@ body {
   list-style-type: none;
   font-size: 20px;
   font-family: "Poppins", sans-serif;
-  color: #2f312c;
-  margin-left: 1vw;
+  color: #34373b;
+  margin-left: 2vw;
 }
 
 #menu li a i {
@@ -167,9 +167,9 @@ body {
 /* ----------Footer---------- */
 
 footer {
-  background-color: #91a19a;
+  background-color: #38291e;
   font-family: "Poppins", sans-serif;
-  color: #2f312c;
+  color: #dae8ec;
   font-size: 15px;
 }
 
@@ -216,7 +216,7 @@ footer {
 #socialmedia ul li a {
   text-decoration: none;
   font-size: 50px;
-  color: #2f312c;
+  color: #dae8ec;
   margin: 15px;
 }
 

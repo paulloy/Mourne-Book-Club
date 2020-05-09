@@ -50,6 +50,10 @@
   margin-left: 5%;
 }
 
+#input2 textarea {
+    resize: none;
+}
+
 #input1 #name,
 #input1 #email,
 #input1 #phone,
