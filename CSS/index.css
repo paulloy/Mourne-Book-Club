@@ -177,7 +177,7 @@ section p:first-of-type {
 
 #background-photo {
   display: block;
-  background-image: url("../../img/pexels-photo-207662.jpeg");
+  background-image: url("../img/pexels-photo-207662.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -238,7 +238,7 @@ section p:first-of-type {
   height: 300px;
   overflow: hidden;
   margin-top: 15px;
-  background-image: url("../../img/4173828699_c02d56200e_b.jpg");
+  background-image: url("../img/4173828699_c02d56200e_b.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -249,7 +249,7 @@ section p:first-of-type {
   height: 300px;
   overflow: hidden;
   margin-top: 15px;
-  background-image: url("../../img/The_Cloughmore_Stone.Rostrevor_-_panoramio.jpg");
+  background-image: url("../img/The_Cloughmore_Stone.Rostrevor_-_panoramio.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
