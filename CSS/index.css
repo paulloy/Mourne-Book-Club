@@ -3,8 +3,8 @@
 /* ----------index.html---------- */
 
 section p:first-of-type {
-    text-align: center;
-     color: #eff7f9;
+  text-align: center;
+  color: #eff7f9;
 }
 
 #book-carousel {
@@ -103,17 +103,17 @@ section p:first-of-type {
   padding: 5px;
   text-decoration: none;
   font-size: 16px;
-  font-weight: 200;
+  font-weight: 300;
   letter-spacing: 1px;
   font-family: "Poppins" sans-serif;
-  border: 1px solid #dae8ec;
+  border: 2px solid #dae8ec;
   background-color: rgba(107, 103, 94, 0.5);
   color: #dae8ec;
   border-radius: 10px;
 }
 
 .flex1 a:hover {
-    background-color: rgba(107, 103, 94, 0.9);
+  background-color: rgba(107, 103, 94, 0.9);
 }
 
 .flex2 {
@@ -168,8 +168,6 @@ section p:first-of-type {
   width: 20%;
   height: 100%;
 }
-
-
 
 #coverbackground {
   width: 100%;
@@ -308,30 +306,30 @@ section p:first-of-type {
 }
 
 @media only screen and (max-width: 892px) {
-    #book-carousel {
-        height: 420px;
-    }
-    .carousel-item img {
-        height: 400px;
-    }
-    #carousel-sliders {
-        top: 150px;
-    }
-    .flex1,
-    .flex2 {
-        width: 225px;
-    }
-.flex1 img {
-  height: 60%;
-  width: 150px;
-}  
-.flex1 a {
-    font-size: 13px;
+  #book-carousel {
+    height: 420px;
+  }
+  .carousel-item img {
+    height: 400px;
+  }
+  #carousel-sliders {
+    top: 150px;
+  }
+  .flex1,
+  .flex2 {
+    width: 225px;
+  }
+  .flex1 img {
+    height: 60%;
+    width: 150px;
+  }
+  .flex1 a {
+    font-size: 15px;
     width: 100px;
-}
-.flex2item0,
-.flex2item1,
-.flex2item2 {
+  }
+  .flex2item0,
+  .flex2item1,
+  .flex2item2 {
     font-size: 15px;
   }
 
@@ -350,7 +348,10 @@ section p:first-of-type {
 }
 
 @media only screen and (max-width: 650px) {
-    
+  #carousel-sliders {
+    top: 200px;
+  }
+  
   #testimonial-image1,
   #testimonial-image2,
   #testimonial-image3 {
@@ -381,48 +382,48 @@ section p:first-of-type {
   .bookbox {
     flex-direction: column-reverse;
     justify-content: center;
+    align-content: center;
   }
   #book-carousel {
-        height: 490px;
-    }
-    .carousel-item img {
-        height: 470px;
-    }
-    
-.flex2item0,
-.flex2item1,
-.flex2item2 {
+    height: 490px;
+  }
+  .carousel-item img {
+    height: 470px;
+  }
+
+  .flex2item0,
+  .flex2item1,
+  .flex2item2 {
     font-size: 14px;
-}
-.flex1 {
+  }
+  .flex1 {
     height: 150px;
     width: 300px;
     flex-direction: column;
     overflow: visible;
-}
-.flex1 img {
+  }
+  .flex1 img {
     width: 75px;
     height: 125px;
     margin-top: 30px;
-}
-.flex1 a {
+  }
+  .flex1 a {
     font-size: 12px;
     width: 100px;
     height: 30px;
     margin-top: -40px;
-
-}
-.flex2 {
+  }
+  .flex2 {
     height: 200px;
     width: 300px;
     margin-top: 40px;
     padding: 0;
     margin: 0;
-}
-  
+  }
+
   #carousel-control-left,
   #carousel-control-right {
-    font-size: 30px;
+    font-size: 35px;
   }
 }
 
