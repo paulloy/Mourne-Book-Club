@@ -34,7 +34,7 @@ section p:first-of-type {
 
 /* 1.Carousel */
 
-#book-carousel {
+#carousel-container {
   display: flex;
   width: 100%;
   height: 520px;
@@ -57,16 +57,16 @@ section p:first-of-type {
   margin: 0;
 }
 
-.cover {
+.background-cover {    
+  background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.bookbox {
+.content-container {
   height: 92%;
   width: auto;
   background-color: rgba(114, 109, 96, 0.5);
@@ -78,7 +78,7 @@ section p:first-of-type {
   align-items: center;
 }
 
-.flex1 {
+.box1 {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -88,14 +88,14 @@ section p:first-of-type {
   padding: 20px;
 }
 
-.flex1 img {
+.box1 img {
   height: 60%;
   width: 200px;
   align-self: center;
   object-fit: scale-down;
 }
 
-.flex1 a {
+.box1 a {
   height: 40%;
   align-self: center;
   width: 120px;
@@ -111,11 +111,11 @@ section p:first-of-type {
   border-radius: 10px;
 }
 
-.flex1 a:hover {
+.box1 a:hover {
   background-color: rgba(107, 103, 94, 0.9);
 }
 
-.flex2 {
+.box2 {
   width: 350px;
   height: 100%;
   display: flex;
@@ -127,7 +127,7 @@ section p:first-of-type {
   padding: 20px;
 }
 
-.flex2item0 {
+.box2p1 {
   font-size: 20px;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -135,17 +135,17 @@ section p:first-of-type {
   color: #97aaa2;
 }
 
-.flex2item1 {
+.box2p2 {
   font-size: 20px;
   font-weight: 00;
 }
 
-.flex2item2 {
+.box2p3 {
   font-weight: 200;
 }
 
-.flex2item2 p:nth-of-type(1),
-.flex2item2 p:nth-of-type(3) {
+.box2p3 p:nth-of-type(1),
+.box2p3 p:nth-of-type(3) {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -182,7 +182,7 @@ section p:first-of-type {
 
 /* 2.About-section */
 
-#background {
+#about-container {
   width: 100%;
   height: auto;
   display: flex;
@@ -192,8 +192,8 @@ section p:first-of-type {
   padding: 30px 0 30px 0;
 }
 
-#box1,
-#box2 {
+#who-we-are,
+#where-we-meet {
   width: 50%;
   padding: 20px;
   height: auto;
@@ -202,7 +202,7 @@ section p:first-of-type {
   justify-content: center;
 }
 
-#box3 {
+#testimonials {
   width: 100%;
   padding: 20px;
   height: auto;
@@ -211,9 +211,9 @@ section p:first-of-type {
   justify-content: center;
 }
 
-#box1 span,
-#box2 span,
-#box3 span {
+#who-we-are span,
+#where-we-meet span,
+#testimonials span {
   background-color: #dae8ec;
   width: 40vw;
   display: block;
@@ -223,7 +223,7 @@ section p:first-of-type {
   box-shadow: 10px 10px grey;
 }
 
-#box1 span div {
+#who-we-are span div {
   width: 100%;
   height: 300px;
   overflow: hidden;
@@ -235,7 +235,7 @@ section p:first-of-type {
   border-radius: 10px;
 }
 
-#box2 span div {
+#where-we-meet span div {
   width: 100%;
   height: 300px;
   overflow: hidden;
@@ -247,15 +247,15 @@ section p:first-of-type {
   border-radius: 10px;
 }
 
-#box3 span {
+#testimonials span {
   width: 75vw;
 }
 
-#box3 span article img {
+#testimonials span article img {
   margin: 15px;
 }
 
-#box3 span article {
+#testimonials span article {
   margin-bottom: 20px;
 }
 
@@ -272,7 +272,7 @@ section p:first-of-type {
 
 /* 3.1.892px */
 @media only screen and (max-width: 892px) {
-  #book-carousel {
+  #carousel-container {
     height: 420px;
   }
   .carousel-item img {
@@ -281,34 +281,34 @@ section p:first-of-type {
   #carousel-sliders {
     top: 150px;
   }
-  .flex1,
-  .flex2 {
+  .box1,
+  .box2 {
     width: 225px;
   }
-  .flex1 img {
+  .box1 img {
     height: 60%;
     width: 150px;
   }
-  .flex1 a {
+  .box1 a {
     font-size: 15px;
     width: 100px;
   }
-  .flex2item0,
-  .flex2item1,
-  .flex2item2 {
+  .box2p1,
+  .box2p2,
+  .box2p3 {
     font-size: 15px;
   }
 
-  #background {
+  #about-container {
     flex-direction: column;
   }
-  #box1,
-  #box2 {
+  #who-we-are,
+  #where-we-meet {
     width: 100%;
   }
-  #box1 span,
-  #box2 span,
-  #box3 span {
+  #who-we-are span,
+  #where-we-meet span,
+  #testimonials span {
     width: 80%;
   }
 }
@@ -326,61 +326,61 @@ section p:first-of-type {
     height: 40px;
     margin: 0;
   }
-  #box1 span,
-  #box2 span,
-  #box3 span {
+  #who-we-are span,
+  #where-we-meet span,
+  #testimonials span {
     width: 100%;
   }
-  #box1 span div,
-  #box2 span div {
+  #who-we-are span div,
+  #where-we-meet span div {
     height: 150px;
   }
-  #box1,
-  #box2,
-  #box3 {
+  #who-we-are,
+  #where-we-meet,
+  #testimonials {
     font-size: 13px;
   }
-  #box1 span h2,
-  #box2 span h2,
-  #box3 span h2 {
+  #who-we-are span h2,
+  #where-we-meet span h2,
+  #testimonials span h2 {
     font-size: 20px;
   }
 
-  .bookbox {
+  .content-container {
     flex-direction: column-reverse;
     justify-content: center;
     align-content: center;
   }
-  #book-carousel {
+  #carousel-container {
     height: 490px;
   }
   .carousel-item img {
     height: 470px;
   }
 
-  .flex2item0,
-  .flex2item1,
-  .flex2item2 {
+  .box2p1,
+  .box2p2,
+  .box2p3 {
     font-size: 14px;
   }
-  .flex1 {
+  .box1 {
     height: 150px;
     width: 300px;
     flex-direction: column;
     overflow: visible;
   }
-  .flex1 img {
+  .box1 img {
     width: 75px;
     height: 125px;
     margin-top: 30px;
   }
-  .flex1 a {
+  .box1 a {
     font-size: 12px;
     width: 100px;
     height: 30px;
     margin-top: -40px;
   }
-  .flex2 {
+  .box2 {
     height: 200px;
     width: 300px;
     margin-top: 40px;
@@ -396,7 +396,7 @@ section p:first-of-type {
 
 /* 3.3.450px */
 @media only screen and (max-width: 450px) {
-  .bookbox {
+  .content-container {
     min-width: 92%;
     max-width: 92%;
   }
@@ -406,9 +406,9 @@ section p:first-of-type {
   #carousel-control-right {
     right: 10%;
   }
-  #box1 span,
-  #box2 span,
-  #box3 span {
+  #who-we-are span,
+  #where-we-meet span,
+  #testimonials span {
     padding: 15px;
   }
 }
