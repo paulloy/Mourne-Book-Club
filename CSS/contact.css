@@ -10,7 +10,6 @@
 */
 
 /* 1.Google-map */
-
 #google-map iframe {
   width: 125%;
   height: 300px;
@@ -19,7 +18,6 @@
 }
 
 /* 2.Contact-details */
-
 #contact-address {
   text-align: left;
   font-size: 15px;

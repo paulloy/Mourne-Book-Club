@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* Search: ctrl+F
+0.Body
 1.Header
     1.1.Logo
     1.2.Navbar
@@ -16,6 +17,8 @@
     3.4.374px
 */
 
+
+/* 0.Body */
 body {
   font-family: "Poppins", sans-serif;
   background-color: #dae8ec;
@@ -28,26 +31,26 @@ body {
 
 /* 1.Header */
 
-#header {
+#header-container {
   padding: 0;
   background-color: rgba(114, 109, 96, 0.55);
 }
 
 /* 1.1.Logo */
 
-#logo {
+#logo-container {
   margin-left: 2vw;
   padding: 0;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-#logo a {
+#logo-container a {
   text-decoration: none;
   padding: 0;
 }
 
-#logo a img {
+#logo-container a img {
   height: 50px;
   padding: 5px;
 }
@@ -236,10 +239,10 @@ footer {
   #nav-button {
     margin-right: 2vw;
   }
-  #logo {
+  #logo-container {
     margin-left: 5px;
   }
-  #logo a img {
+  #logo-container a img {
     height: 9vw;
   }
   #menu li {
@@ -278,7 +281,7 @@ footer {
 /* 3.4.374px */
 
 @media only screen and (max-width: 374px) {
-  #logo a img {
+  #logo-container a img {
     height: 30px;
   }
 }
