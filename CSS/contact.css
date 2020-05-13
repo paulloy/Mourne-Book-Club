@@ -1,15 +1,15 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* Search: ctrl+F
 1.Google-map
 2.Contact-details
 3.Form
 4.Media-screen-width
-    4.1.768px
+    4.1.767px
+    4.2.575px
 */
 
-/* 1.Google-map */
+/* #### 1.Google-map #### */
 #google-map iframe {
   width: 125%;
   height: 300px;
@@ -17,7 +17,7 @@
   padding-left: 5%;
 }
 
-/* 2.Contact-details */
+/* #### 2.Contact-details #### */
 #contact-address {
   text-align: left;
   font-size: 15px;
@@ -27,7 +27,7 @@
   justify-content: center;
 }
 
-/* 3.Form */
+/* #### 3.Form #### */
 
 #input1,
 #input2 {
@@ -61,7 +61,7 @@
 }
 
 #input2 textarea {
-    resize: none;
+  resize: none;
 }
 
 #input1 #name,
@@ -123,10 +123,10 @@ form {
   background-color: rgba(47, 49, 44, 0.2);
 }
 
-/* 4.Media-screen-width */
+/* #### 4.Media-screen-width #### */
 
-/* 4.1.768px */
-@media only screen and (max-width: 768px) {
+/* #### 4.1.767px #### */
+@media only screen and (max-width: 767px) {
   #google-map iframe {
     width: 100%;
     padding-left: 3%;
@@ -149,5 +149,16 @@ form {
   }
   #input2 {
     margin-bottom: 30px;
+  }
+}
+
+/* #### 4.2.575px #### */
+@media only screen and (max-width: 576px) {
+  #contact-address {
+    font-size: 13px;
+  }
+  #input1 label,
+  #input2 label {
+    font-size: 13px;
   }
 }
