@@ -369,8 +369,8 @@
   #testimonial-image1,
   #testimonial-image2,
   #testimonial-image3 {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
   }
   #who-we-are span,
   #where-we-meet span,
@@ -413,5 +413,8 @@
   #where-we-meet span,
   #testimonials span {
     padding: 15px;
+  }
+  #testimonials span article {
+    margin-bottom: 0;
   }
 }
