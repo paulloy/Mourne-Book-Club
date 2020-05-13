@@ -267,6 +267,7 @@
 
 /* #### 3.1.991px #### */
 @media only screen and (max-width: 991px) {
+  /* #### Carousel #### */
   #carousel-container {
     height: 420px;
   }
@@ -293,7 +294,7 @@
   .box2p3 {
     font-size: 15px;
   }
-
+  /* #### About-section #### */
   #about-container {
     flex-direction: column;
   }
@@ -397,6 +398,7 @@
 
 /* #### 3.3.450px #### */
 @media only screen and (max-width: 450px) {
+  /* #### Carousel #### */
   .content-container {
     width: 92%;
   }
@@ -406,6 +408,7 @@
   #carousel-control-right {
     right: 10%;
   }
+  /* #### About-section #### */
   #who-we-are span,
   #where-we-meet span,
   #testimonials span {
