@@ -13,7 +13,7 @@
 3.Media-screen-width
     3.1.991px
     3.2.576px
-    3.3.374px
+    3.3.450px
 */
 
 /* #### 0.Body #### */
@@ -25,6 +25,8 @@ body {
 #page-title {
   text-align: center;
   padding: 15px;
+  font-size: 25px;
+  margin-top: 10px;
 }
 
 /* #### 1.Header #### */
@@ -70,6 +72,10 @@ body {
   border-radius: 10px;
 }
 
+#menu li a:active {
+  color: #2f312c6c;
+}
+
 #active-page {
   background-color: rgba(114, 109, 96, 0.5);
   border-radius: 10px;
@@ -102,14 +108,14 @@ footer {
   background-color: rgba(114, 109, 96, 0.55);
   font-family: "Poppins", sans-serif;
   color: #2f312c;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 #foot #address,
 #foot #socialmedia {
   text-align: center;
   height: 150px;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 /* #### 2.1.Social Media #### */
@@ -148,8 +154,6 @@ footer {
 }
 
 #address div {
-  margin: 0;
-  padding: 0;
   width: 50%;
 }
 
@@ -158,8 +162,6 @@ footer {
 #copyright {
   position: relative;
   height: 60px;
-  margin: 0;
-  padding: 0;
 }
 
 #copyright p {
@@ -230,7 +232,7 @@ footer {
   }
 }
 
-/* #### 3.3.374px #### */
+/* #### 3.3.450px #### */
 
 @media only screen and (max-width: 450px) {
   #logo-container {
