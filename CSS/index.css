@@ -6,15 +6,19 @@
     1.1.Carousel-sliders
 2.About-section
 3.Media-screen-width
-    3.1.892px
-    3.2.650px
+    3.1.991px
+    3.2.576px
     3.3.450px
 */
 
-/* 0.Body */
-section p:first-of-type {
-  text-align: center;
-  color: #eff7f9;
+/* #### 0.Body #### */
+
+#background-photo {
+  background-image: url("../img/pexels-photo-207662.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
 }
 
 #coverbackground {
@@ -23,16 +27,7 @@ section p:first-of-type {
   background-color: #000000be;
 }
 
-#background-photo {
-  display: block;
-  background-image: url("../img/pexels-photo-207662.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-}
-
-/* 1.Carousel */
+/* #### 1.Carousel #### */
 
 #carousel-container {
   display: flex;
@@ -57,7 +52,7 @@ section p:first-of-type {
   margin: 0;
 }
 
-.background-cover {    
+.background-cover {
   background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
   height: 100%;
@@ -112,7 +107,7 @@ section p:first-of-type {
 }
 
 .box1 a:hover {
-  background-color: rgba(107, 103, 94, 0.9);
+  background-color: rgba(114, 109, 96);
 }
 
 .box2 {
@@ -151,7 +146,7 @@ section p:first-of-type {
   letter-spacing: 1px;
 }
 
-/* 1.1.Carousel-sliders */
+/* #### 1.1.Carousel-sliders #### */
 
 #carousel-control-left,
 #carousel-control-right {
@@ -180,7 +175,7 @@ section p:first-of-type {
   top: 200px;
 }
 
-/* 2.About-section */
+/* #### 2.About-section #### */
 
 #about-container {
   width: 100%;
@@ -268,10 +263,10 @@ section p:first-of-type {
   border-radius: 50%;
 }
 
-/* 3.Media-screen-width */
+/* #### 3.Media-screen-width #### */
 
-/* 3.1.892px */
-@media only screen and (max-width: 892px) {
+/* #### 3.1.991px #### */
+@media only screen and (max-width: 991px) {
   #carousel-container {
     height: 420px;
   }
@@ -290,7 +285,7 @@ section p:first-of-type {
     width: 150px;
   }
   .box1 a {
-    font-size: 15px;
+    font-size: 13px;
     width: 100px;
   }
   .box2p1,
@@ -310,54 +305,29 @@ section p:first-of-type {
   #where-we-meet span,
   #testimonials span {
     width: 80%;
-  }
-}
-
-/* 3.2.650px */
-@media only screen and (max-width: 650px) {
-  #carousel-sliders {
-    top: 200px;
-  }
-  
-  #testimonial-image1,
-  #testimonial-image2,
-  #testimonial-image3 {
-    width: 40px;
-    height: 40px;
-    margin: 0;
-  }
-  #who-we-are span,
-  #where-we-meet span,
-  #testimonials span {
-    width: 100%;
-  }
-  #who-we-are span div,
-  #where-we-meet span div {
-    height: 150px;
-  }
-  #who-we-are,
-  #where-we-meet,
-  #testimonials {
-    font-size: 13px;
+    font-size: 15px;
   }
   #who-we-are span h2,
   #where-we-meet span h2,
   #testimonials span h2 {
-    font-size: 20px;
+    font-size: 25px;
   }
+}
 
-  .content-container {
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-content: center;
-  }
+/* #### 3.2.576px #### */
+@media only screen and (max-width: 576px) {
+  /* #### Carousel #### */
   #carousel-container {
     height: 490px;
   }
   .carousel-item img {
     height: 470px;
   }
-
+  .content-container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-content: center;
+  }
   .box2p1,
   .box2p2,
   .box2p3 {
@@ -387,18 +357,48 @@ section p:first-of-type {
     padding: 0;
     margin: 0;
   }
-
   #carousel-control-left,
   #carousel-control-right {
     font-size: 35px;
   }
+  #carousel-sliders {
+    top: 200px;
+  }
+  /* #### About-section #### */
+  #testimonial-image1,
+  #testimonial-image2,
+  #testimonial-image3 {
+    width: 40px;
+    height: 40px;
+  }
+  #who-we-are span,
+  #where-we-meet span,
+  #testimonials span {
+    width: 100%;
+    font-size: 12px;
+  }
+  #who-we-are span div,
+  #where-we-meet span div {
+    height: 150px;
+  }
+  #who-we-are span h2,
+  #where-we-meet span h2,
+  #testimonials span h2 {
+    font-size: 18px;
+  }
+  #testimonials span article {
+    display: flex;
+    flex-direction: column;
+  }
+  #testimonials span article img {
+    align-self: center;
+  }
 }
 
-/* 3.3.450px */
+/* #### 3.3.450px #### */
 @media only screen and (max-width: 450px) {
   .content-container {
-    min-width: 92%;
-    max-width: 92%;
+    width: 92%;
   }
   #carousel-control-left {
     left: 10%;
@@ -412,4 +412,3 @@ section p:first-of-type {
     padding: 15px;
   }
 }
-
