@@ -22,6 +22,12 @@
   text-align: left;
   font-size: 15px;
   padding-left: 18vw;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,6 +37,11 @@
 
 #input1,
 #input2 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -74,6 +85,11 @@
 }
 
 form {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+
   display: flex;
   width: 100%;
   flex-direction: row;
@@ -143,6 +159,11 @@ form {
   }
   #input1,
   #input2 {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -163,6 +184,6 @@ form {
     margin-top: 10px;
   }
   .container-fluid {
-      padding: 0 5px 0 5px;
+    padding: 0 5px 0 5px;
   }
 }

@@ -121,6 +121,11 @@ footer {
 /* #### 2.1.Social Media #### */
 
 #socialmedia ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -144,10 +149,26 @@ footer {
   color: #c4302b;
 }
 
+#socialmedia ul li a #fb:active {
+  color: #3b589880;
+}
+#socialmedia ul li a #tt:active {
+  color: #08a2e980;
+}
+#socialmedia ul li a #yt:active {
+  color: #c4302b80;
+}
+
 /* #### 2.2.Address #### */
 
 #address {
   text-align: center;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -181,6 +202,12 @@ footer {
     text-align: center;
     padding: 6px 0 6px 0;
     width: 100%;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+
     display: flex;
     justify-content: center;
   }

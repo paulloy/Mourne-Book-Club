@@ -34,8 +34,13 @@
 }
 
 .members div {
-  height: 120px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+
   display: flex;
+  height: 120px;
   overflow: hidden;
   justify-content: center;
 }
@@ -53,6 +58,12 @@
   font-size: 13px;
   margin-top: 5px;
   margin-bottom: -5px;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+
   display: flex;
   align-content: center;
   justify-content: center;
