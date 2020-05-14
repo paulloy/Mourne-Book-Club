@@ -21,9 +21,9 @@ The Contact page features a form that a user may fill out if they have any quest
 
 ## Technologies Used
 
-*HTML5
-*CSS3
-*[Bootstrap v.4.4](https://getbootstrap.com/docs/4.4/getting-started/download/)
+* HTML5
+* CSS3
+* [Bootstrap v.4.4](https://getbootstrap.com/docs/4.4/getting-started/download/)
 
 ## Testing
 
@@ -46,13 +46,15 @@ The Contact page features a form that a user may fill out if they have any quest
 ### Media
 
 All Media photos were sourced using [Google Images](https://www.google.co.uk/imghp?hl=en&tab=wi&ogbl),
-except for the images in *Book-Covers-Address* which were sourced from [GoodReads](https://www.goodreads.com/), and
+except for the images in *Book cover image address* which were sourced from [GoodReads](https://www.goodreads.com/), and
 the Mourne Book Club logo which I created using the MeathFLF font by [Casady & Greene](https://www.fontspace.com/casady-and-greene)
 on the [GNU Image Manipulation Program](https://www.gimp.org/).
 
 * [Mourne Book Club Logo](img/mournelogo2f312c.png)
 * [MeathFLF](https://www.fontspace.com/meathflf-font-f1247)
-* [Book-Covers-Address](img/book-covers/bookcoveraddress.txt)
-* [Carousel-images-address](img/carousel-slides/Image-Address.txt)
-* [Gallery-images-address](img/gallery/gallery-images.txt)
-* [Members-images-address](img/members-images/MembersImageAddress.txt)
+* [Book cover image address](img/book-covers/bookcoveraddress.txt)
+
+* [Carousel background image address](img/carousel-slides/Image-Address.txt)
+* [Gallery image address](img/gallery/gallery-images.txt)
+* [Members image address](img/members-images/MembersImageAddress.txt)
+* [About section image address](img/About-section-image-addresses.txt)
