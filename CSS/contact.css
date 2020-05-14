@@ -155,10 +155,14 @@ form {
 /* #### 4.2.575px #### */
 @media only screen and (max-width: 576px) {
   #contact-address {
-    font-size: 13px;
+    font-size: 14px;
   }
   #input1 label,
   #input2 label {
-    font-size: 13px;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .container-fluid {
+      padding: 0 5px 0 5px;
   }
 }
