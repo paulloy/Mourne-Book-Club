@@ -376,7 +376,7 @@
   #where-we-meet span,
   #testimonials span {
     width: 100%;
-    font-size: 12px;
+    font-size: 14px;
   }
   #who-we-are span div,
   #where-we-meet span div {
@@ -385,7 +385,7 @@
   #who-we-are span h2,
   #where-we-meet span h2,
   #testimonials span h2 {
-    font-size: 18px;
+    font-size: 19px;
   }
   #testimonials span article {
     display: flex;
