@@ -1,12 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 #QandA div {
   padding: 30px;
 }
 
 #QandA div h2 {
-  margin-top: 10px;
   text-align: left;
   font-size: 18px;
   font-weight: 700;
+}
+
+@media only screen and (max-width: 576px) {
+  #QandA div {
+    font-size: 14px;
+    padding: 15px;
+  }
+  #QandA div h2 {
+      font-size: 16px;
+      margin-bottom: 10px;
+  }
 }
