@@ -115,7 +115,7 @@
   }
   .members {
     width: 30vw;
-    height: auto;
+    height: 200px;
   }
   .members div {
     width: 30vw;
@@ -125,6 +125,6 @@
     width: 90px;
   }
   .members p {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
