@@ -66,7 +66,7 @@
                 type="button"
                 class="nav-link"
                 data-toggle="modal"
-                data-target="#exampleModal"
+                data-target="#loginModal"
               >
                 LOGIN
               </a>
@@ -77,10 +77,10 @@
 <!-- Bootstrap Modal -->
       <div
         class="modal fade"
-        id="exampleModal"
+        id="loginModal"
         tabindex="-1"
         role="dialog"
-        aria-labelledby="exampleModalLabel"
+        aria-labelledby="loginModal"
         aria-hidden="true"
       >
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -89,11 +89,11 @@
               <fieldset id="Modal-signin">
               <form method="post" action="https://formdump.codeinstitute.net">
               <label for="M-email">Your Email</label>
-              <input id="M-email" type="email" required>
+              <input id="M-email" type="email" name="email" required>
               <label for="M-password">Your Password</label>
-              <input id="M-password" type="password" required>   
-              <a href="#">Forgot Password?</a>                       
-              <button type="submit">Sign In</button>                 
+              <input id="M-password" type="password" name="password" minlength="8" required>   
+              <a href="contact.html">Forgot Password?</a>                       
+              <button type="submit">Login</button>                 
               </form>
               </fieldset>
             </div>
@@ -103,8 +103,8 @@
               <p>Not a member? <a
               href="#"
                 data-toggle="modal"
-                data-target="#exampleModal2"
-                data-dismiss="modal">Sign Up</a></p> 
+                data-target="#registerModal"
+                data-dismiss="modal">Register</a></p> 
               <button
                 type="button"
                 data-dismiss="modal"
@@ -120,10 +120,10 @@
 
       <div
         class="modal fade"
-        id="exampleModal2"
+        id="registerModal"
         tabindex="-1"
         role="dialog"
-        aria-labelledby="exampleModalLabel"
+        aria-labelledby="registerModal"
         aria-hidden="true"
       >
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -132,23 +132,23 @@
               <fieldset id="Modal-signup">
               <form method="post" action="https://formdump.codeinstitute.net">
               <label for="SU-email">Your Email</label>
-              <input id="SU-email" type="email" required>
+              <input id="SU-email" type="email" name="email" required>
               <label for="SU-password">Your Password</label>
-              <input id="SU-password" type="password" required>   
+              <input id="SU-password" type="password" name="password" minlength="8" required>   
               <label for="SU-password2">Repeat Password</label>
-              <input id="SU-password2" type="password" required>                       
-              <button type="submit">Sign Up</button>                 
+              <input id="SU-password2" type="password" name="password-repeat" minlength="8" required>                       
+              <button type="submit">Register</button>                 
               </form>
               </fieldset>
             </div>
 
             <div class="modal-footer"> 
               <div id="S-footer">
-              <p>Already have an account? <br><a
+              <p>Already a member? <a
               href="#"
                 data-toggle="modal"
-                data-target="#exampleModal"
-                data-dismiss="modal">Sign In</a></p> 
+                data-target="#loginModal"
+                data-dismiss="modal">Login</a></p> 
               <button
                 type="button"
                 data-dismiss="modal"

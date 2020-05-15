@@ -42,7 +42,8 @@
           id="nav-button"
           class="navbar-toggler"
           data-toggle="collapse"
-          data-target="#collapseNav">
+          data-target="#collapseNav"
+        >
           <span id="toggle-icon"><i class="fas fa-bars"></i></span>
         </button>
 
@@ -60,9 +61,106 @@
             <li class="nav-item">
               <a id="active-page" class="nav-link" href="contact.html">CONTACT</a>
             </li>
+            <li class="nav-item">
+              <a
+                type="button"
+                class="nav-link"
+                data-toggle="modal"
+                data-target="#loginModal"
+              >
+                LOGIN
+              </a>
+            </li>
           </ul>
         </div>
       </nav>
+<!-- Bootstrap Modal -->
+      <div
+        class="modal fade"
+        id="loginModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="loginModal"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div id="modal" class="modal-body">
+              <fieldset id="Modal-signin">
+              <form method="post" action="https://formdump.codeinstitute.net">
+              <label for="M-email">Your Email</label>
+              <input id="M-email" type="email" name="email" required>
+              <label for="M-password">Your Password</label>
+              <input id="M-password" type="password" name="password" minlength="8" required>   
+              <a href="contact.html">Forgot Password?</a>                       
+              <button type="submit">Login</button>                 
+              </form>
+              </fieldset>
+            </div>
+
+            <div class="modal-footer">
+                     <div id="M-footer">
+              <p>Not a member? <a
+              href="#"
+                data-toggle="modal"
+                data-target="#registerModal"
+                data-dismiss="modal">Register</a></p> 
+              <button
+                type="button"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="registerModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="registerModal"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div id="signup-modal" class="modal-body">
+              <fieldset id="Modal-signup">
+              <form method="post" action="https://formdump.codeinstitute.net">
+              <label for="SU-email">Your Email</label>
+              <input id="SU-email" type="email" name="email" required>
+              <label for="SU-password">Your Password</label>
+              <input id="SU-password" type="password" name="password" minlength="8" required>   
+              <label for="SU-password2">Repeat Password</label>
+              <input id="SU-password2" type="password" name="password-repeat" minlength="8" required>                       
+              <button type="submit">Register</button>                 
+              </form>
+              </fieldset>
+            </div>
+
+            <div class="modal-footer"> 
+              <div id="S-footer">
+              <p>Already a member? <a
+              href="#"
+                data-toggle="modal"
+                data-target="#loginModal"
+                data-dismiss="modal">Login</a></p> 
+              <button
+                type="button"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
     </header>
 
     <section>
