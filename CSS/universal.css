@@ -102,16 +102,17 @@ body {
   background-color: rgba(114, 109, 96, 0.5);
 }
 
-
 #exampleModal {
-    padding: 0;
+  padding: 0;
 }
 
+#signup-modal,
 #modal {
   background-color: #dae8ec;
   padding: 8px;
 }
 
+#Modal-signup form,
 #Modal-signin form {
   display: flex;
   flex-direction: column;
@@ -119,12 +120,14 @@ body {
   position: relative;
 }
 
+#Modal-signup form input,
 #Modal-signin form input {
   width: 80%;
   border-radius: 10px;
   border: 1px solid grey;
 }
 
+#Modal-signup form label,
 #Modal-signin form label {
   margin: 20px 0 5px 0;
   font-size: 14px;
@@ -135,11 +138,12 @@ body {
 
 #Modal-signin a {
   font-size: 14px;
-    position: absolute;
-    right: 30px;
-    bottom: 74px;
+  position: absolute;
+  right: 30px;
+  bottom: 74px;
 }
 
+#Modal-signup form button,
 #Modal-signin form button {
   margin-top: 10px;
   color: #2f312c;
@@ -151,6 +155,7 @@ body {
   margin: 40px 0 20px 0;
 }
 
+#S-footer,
 #M-footer {
   width: 100%;
   height: 100%;
@@ -160,12 +165,14 @@ body {
   position: relative;
 }
 
+#S-footer p,
 #M-footer p {
   font-size: 14px;
   margin: 0;
   justify-self: flex-start;
 }
 
+#S-footer button,
 #M-footer button {
   color: #2f312c;
   border: 2px solid grey;
