@@ -66,10 +66,17 @@ body {
   padding: 6px 8px 6px 8px;
 }
 
-#menu li a:hover {
-  background-color: rgba(114, 109, 96, 0.5);
+@keyframes hover {
+  from {background-color: transparent;}
+  to {background-color: rgba(114, 109, 96, 0.5);}
+}
+
+.hover:hover {
   padding: 6px 8px 6px 8px;
   border-radius: 10px;
+  animation-name: hover;
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
 }
 
 #menu li a:active {
@@ -102,14 +109,32 @@ body {
   background-color: rgba(114, 109, 96, 0.5);
 }
 
-#exampleModal {
-  padding: 0;
+#loginModal,
+#registerModal {
+  padding: 0px;
 }
 
 #signup-modal,
 #modal {
   background-color: #dae8ec;
   padding: 8px;
+}
+
+.modal-header {
+  background-color: whitesmoke;
+  padding: 0;
+}
+
+.modal-header h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: #2f312c;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.modal-footer {
+  background-color: whitesmoke;
 }
 
 #Modal-signup form,
@@ -145,11 +170,11 @@ body {
 
 #Modal-signup form button,
 #Modal-signin form button {
+  background-color: #eff7f9;
   margin-top: 10px;
   color: #2f312c;
   border: 2px solid grey;
   border-radius: 20px;
-  background-color: #eff7f9;
   font-size: 15px;
   padding: 8px 20px 8px 20px;
   margin: 40px 0 20px 0;

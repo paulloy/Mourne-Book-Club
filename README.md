@@ -6,6 +6,8 @@ frequently asked questions, and a contact page for more information.
 
 ## UX
 
+
+
 ## Features
 
 ### Carousel
@@ -18,6 +20,11 @@ with more information on the book being displayed.
 ### Contact Form
 
 The Contact page features a form that a user may fill out if they have any questions they wish to ask.
+
+### Modal 
+
+When Login is selected on the navbar, a modal appears which will allow a user to login to their Mourne Book Club account.
+If they are not a member, there is a register link which will close the login modal and bring up a register modal.
 
 ## Technologies Used
 
@@ -39,6 +46,20 @@ The Contact page features a form that a user may fill out if they have any quest
     1. Form submits successfully when *Join Our Mailing List (Optional)* is checked alongside the required information.
     1. Form submits successfully when all inputs are filled.
 
+1. Login
+    1. Clicking on Login will successfully bring up the *LOGIN* modal on every page.
+    1. Clicking Login with empty inputs will display an error message.
+    1. Clicking Login with only the email filled will display an error message.
+    1. Submitting *Your Email* without an @ symbol will display an error message.
+    1. Clicking Login with only the password filled will display an error message.
+    1. Clicking Login with both filled but a password shorter than 8 characters will display an error message.
+    1. Form will submit when email is entered with a password with 8 or more characters.
+    1. Clicking on the register hyperlink will successfully close the Login modal and bring up the register Modal.
+
+Bug:
+When the Modal appears in a browser window, the modal has a padding-right: 17px; When this happens the background image on 
+index.html will stretch.
+
 ## Deployment
 
 ## Credits
@@ -58,3 +79,7 @@ on the [GNU Image Manipulation Program](https://www.gimp.org/).
 * [Gallery image address](img/gallery/gallery-images.txt)
 * [Members image address](img/members-images/MembersImageAddress.txt)
 * [About section image address](img/About-section-image-addresses.txt)
+
+
+The following quote "That part of Rostrevor which overlooks Carlingford Lough
+is my idea of Narnia." was copied from [Visit Mourne Mountains](https://www.visitmournemountains.co.uk/ChroniclesofNarnia)
