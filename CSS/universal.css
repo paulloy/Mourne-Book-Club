@@ -180,6 +180,15 @@ body {
   margin: 40px 0 20px 0;
 }
 
+#Modal-signup form button:hover,
+#Modal-signin form button:hover {
+  background-color: rgba(47, 49, 44, 0.2);
+}
+#Modal-signup form button:active,
+#Modal-signin form button:active {
+  background-color: rgba(47, 49, 44, 0.404);
+}
+
 #S-footer,
 #M-footer {
   width: 100%;
@@ -209,6 +218,16 @@ body {
   right: 0px;
   padding: 5px 10px 5px 10px;
 }
+
+#S-footer button:hover,
+#M-footer button:hover {
+  background-color: rgba(47, 49, 44, 0.2);    
+}
+#S-footer button:active,
+#M-footer button:active {
+  background-color: rgba(47, 49, 44, 0.404);    
+}
+
 
 /* #### 2.Footer #### */
 
