@@ -138,6 +138,9 @@ form {
 #input2 button:hover {
   background-color: rgba(47, 49, 44, 0.2);
 }
+#input2 button:active {
+  background-color: rgba(47, 49, 44, 0.404);
+}
 
 /* #### 4.Media-screen-width #### */
 
