@@ -121,7 +121,7 @@ body {
 }
 
 .modal-header {
-  background-color: whitesmoke;
+  background-color: white;
   padding: 0;
 }
 
@@ -134,7 +134,7 @@ body {
 }
 
 .modal-footer {
-  background-color: whitesmoke;
+  background-color: white;
 }
 
 #Modal-signup form,
