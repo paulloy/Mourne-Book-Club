@@ -3,15 +3,45 @@
 The [Mourne Book Club](https://paulloy.github.io/Mourne-Book-Club/) has been rapidly attracting new members, and this project
 aims to accommodate that growth through being a hub where members can keep up to date with important club information, such
 as: what books are being read, who is reading them, and when will the meetings take place.
-For potential members, this project serves as an easy way for them to learn about what the club is and how they can join.
+For potential members, this project serves as an easy way for them to learn about what the club is, where they meet,
+and how they can join.
 The Mourne Book Club aims to become the central node in a network of book clubs in the Newry and Mourne district.
 
 ## UX
 
-This website is designed for users within Newry and Mourne who are interested in joining a local book club.
+This website is designed for users who are members, and those who are new to the club. New users are provided with 
+information that serves as an advertisement for the club, while simultaneously informing club members of important
+information; the carousel being an example of this. New users are able to discover important information about the club
+that informs them of why they should join. 
+For members they can receive updates on what dates they can attend meetings, what books are available, and who is reading
+what.
 
-- User1:
-  - user experience (UX)
+### User Stories
+
+- User: Member
+  - At the last meeting I read a history book, but the next history book is something I have already read, so I am
+  thinking of joining another meeting, but I don't know what books will be covered at those meetings, given that I have 
+  not attended them. With no one to ask, I will check out the website.
+  - I am first greeted with a carousel that immediately informs me of what I was searching for. Displayed are all the titles
+  that will be covered at each meeting. Scrolling through I learn more about each title and settle on one book to read.
+  - The meeting is in two weeks in the evening after I finish work, so I add the date to my calender.
+  - I now move onto the members page to see who will be reading the same title as me. I notice some familiar faces,
+  and some new ones. Now I have everything I need to know, I now log out.
+
+- User: New User
+  - I am thinking of joining a book club and I happen to come upon the Mourne Book Club. Delighted to see a book club with its own website
+  rather than a small facebook group, I start investigating.
+  - Greeted firstly with a carousel, the diversity of books and number of meetings I could join is made immediately 
+  obvious. Each schedule is planned well ahead of time, giving me enough notice to place the date in my calender.
+  - Below the carousel is a section that informs me of who the Mourne Book Club is, where they meet, and some testimonials from
+  members.
+  - With some questions in mind, I scroll to the navbar and see an FAQ. Entering the FAQ page I have most of my questions
+  answered. Though, I still have some questions not yet answered.
+  - I visit the contact page, and I see Google maps which lets me input my address and calculate how long it will take to 
+  drive to the club. 
+  - Below the address and map, I fill in a contact form with the remaining questions I have in mind.
+
+### Project Wireframe
 
 [Project Wireframe](MourneBookClubWireframe.pdf)
 
@@ -20,7 +50,7 @@ This website is designed for users within Newry and Mourne who are interested in
 ### Bootstrap Carousel
 
 The user is first greeted with a carousel that features all the books that will be covered at their respective meetings.
-For members, this is the most important information. For new users, this is an advertisement of the electic range of books
+For members, this is the most important information. For new users, this is an advertisement of the diverse range of books
 covered by the club. There is a book for everyone.
 
 ### Bootstrap Modal
@@ -35,12 +65,12 @@ the FAQ page.
 
 ### Members page
 
-This allows a user to view the current club members, their names, the books they are reading, and s small gallery
+This allows a user to view the current club members, their names, the books they are reading, and a small gallery
 with photos from the club.
 
 ### FAQ page
 
-The frequently asked questions page allows a new user to search for questions the club is frequently asked. This allows
+The frequently asked questions page allows a new user to search for questions that the club is frequently asked. This allows
 the user to have their common questions quickly addressed without having to wait for a response after submitting a 
 message on the contact form.
 
@@ -48,7 +78,7 @@ message on the contact form.
 
 This page allows a user to calculate how far they are from the club on google maps. The address, and contact details are 
 available for users who would like to ring the club or email it.
-The contact form allows a user to directly message the club with a query. Any new frequently asked questions will be 
+The contact form allows a user to directly message the club with a question. Any new frequently asked questions will be 
 added to the FAQ page.
 
 ## Technologies Used
@@ -148,16 +178,66 @@ functionality to the website, such as the Navbar Toggler, the Carousel, and the 
     and the content will all reduce in size. Carousel sliders will decrease in size.
     1. At 450px, the translucent container will increase in size so that the carousel sliders appear above it.
 
+### Navbar
+1. Testing 
+    1. Clicking *HOME* from *HOME* will reload the page.
+    1. Clicking *MEMBERS*, *FAQ*, or *CONTACT* from *HOME* will load their respective pages.
+    1. Clicking *LOGIN* from *HOME* will successfully open the Login modal.
+    1. Clicking *MEMBERS* from *MEMBERS* will reload the page.
+    1. Clicking *HOME*, *FAQ*, or *CONTACT* from *MEMBERS* will load their respective pages.
+    1. Clicking *LOGIN* from *MEMBERS* will successfully open the Login modal.
+    1. Clicking *FAQ* from *FAQ* will reload the page.
+    1. Clicking *HOME*, *MEMBERS*, or *CONTACT* from *FAQ* will load their respective pages.
+    1. Clicking *LOGIN* from *FAQ* will successfully open the Login modal.
+    1. Clicking *CONTACT* from *CONTACT* will reload the page.
+    1. Clicking *HOME*, *MEMBERS*, or *FAQ* from *CONTACT* will load their respective pages.
+    1. Clicking *LOGIN* from *CONTACT* will successfully open the Login modal.
+    1. Clicking outside the modal from any page will successfully close the modal.
+
+1. Responsive design
+    1. At 991px, the navbar will collapse into a bootstrap navbar toggler, which when clicked will collapse the 
+    navbar into a column beneath the logo.
+    1. At 576px, the toggler icon, navbar list, and logo will reduce in size.
+    1. At 450px, the toggler icon will reduce in size. The logo width will change into "vw" units.
+
+### Footer
+
+1. Social Media
+    1. Clicking on the Facebook icon on any page will successfully open Facebook in a new tab.
+    1. Clicking on the Twitter icon on any page will successfully open Twitter in a new tab.
+    1. Clicking on the Youtube icon on any page will successfully open Youtube in a new tab.
+
+1. Responsive design
+    1. At 576px, the phone number, and email will drop below the address. The font size will decrease.
+
+### FAQ
+
+1. Responsive design
+    1. At 991ppx, the three columns will reduce to two columns.
+    1. At 767px, the two columns will reduce to one column.
+    1. At 576px, the font sizes will reduce.
+
+### Members 
+
+1. Responsive design
+    1. At 991px the gallery will drop below the members images.
+    1. At 450px the members images, and font sizes will reduce.
+
+1. Bugs
+    1. Given the large number of images on this page, it can take long to load them all. This may be sped up by 
+    reducing the quality of members images since they are displayed as thumbnails. This may make the file size smaller 
+    and speed up loading times. High quality images aren't neccessary for thumbnails.
 
 ## Deployment
 
-This project was deployed with GitHub pages. It can be run locally using GitPod.
+This project was deployed with GitHub pages. [https://paulloy.github.io/Mourne-Book-Club/](https://paulloy.github.io/Mourne-Book-Club/)
+It can be run locally and edited using Gitpod.
 
 ## Credits
 
 ### Content
 
-The quote on the homepage beneath 'Where we meet' that was attributed to C.S. Lewis, "That part of Rostrevor which overlooks Carlingford Lough
+The quote on the homepage featured in 'Where we meet' which was attributed to C.S. Lewis, "That part of Rostrevor which overlooks Carlingford Lough
 is my idea of Narnia." was copied from [Visit Mourne Mountains](https://www.visitmournemountains.co.uk/ChroniclesofNarnia)
 
 Google maps was copied from [Google Maps]("https://www.google.com/maps/place/Rostrevor,+Newry/@54.1068079,-6.2039405,14z/data=!3m1!4b1!4m5!3m4!1s0x4860d709523d0af3:0x40a379b46bb71a68!8m2!3d54.10073!4d-6.2003999").
