@@ -242,6 +242,9 @@ is my idea of Narnia." was copied from [Visit Mourne Mountains](https://www.visi
 
 Google maps was copied from [Google Maps]("https://www.google.com/maps/place/Rostrevor,+Newry/@54.1068079,-6.2039405,14z/data=!3m1!4b1!4m5!3m4!1s0x4860d709523d0af3:0x40a379b46bb71a68!8m2!3d54.10073!4d-6.2003999").
 
+The following .txt file contains all the HTML5 Bootstrap classes:
+- [Bootstrap classes](BootstrapClasses.txt)
+
 ### Media
 
 All Media photos were sourced using [Google Images](https://www.google.co.uk/imghp?hl=en&tab=wi&ogbl),
@@ -257,6 +260,14 @@ on the [GNU Image Manipulation Program](https://www.gimp.org/).
 - [Gallery image address](img/gallery/gallery-images.txt)
 - [Members image address](img/members-images/MembersImageAddress.txt)
 - [About section image address](img/About-section-image-addresses.txt)
+
+The following icons were sourced from [Font Awesome](https://fontawesome.com/)
+
+- [<i class="fas fa-bars"></i>](https://fontawesome.com/icons/bars?style=solid)
+- [<i class="far fa-copyright"></i>](https://fontawesome.com/icons/copyright?style=regular)
+- [<i class="fab fa-facebook-square" id="fb"></i>](https://fontawesome.com/icons/facebook-square?style=brands)
+- [<i class="fab fa-twitter-square" id="tt"></i>](https://fontawesome.com/icons/twitter-square?style=brands)
+- [<i class="fab fa-youtube-square" id="yt"></i>](https://fontawesome.com/icons/youtube-square?style=brands)
 
 ### Acknowledgements
 
