@@ -129,11 +129,11 @@
 }
 
 .box1 a:hover {
-  background-color: rgba(114, 109, 96);
+  background-color: rgba(116, 112, 102, 0.7);
 }
-
 .box1 a:active {
-  color: #dae8ec94;
+  background-color: rgba(116, 112, 102);
+  color: #97aaa2;
 }
 
 .box2 {
