@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<title>Mourne Book Club</title>
+
 	<!--Bootstrap-->
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
 		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
@@ -13,9 +14,11 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
 	<!--/bootstrap-->
+
 	<!--Font Awesome-->
 	<script src="https://kit.fontawesome.com/24762b2e03.js" crossorigin="anonymous"></script>
 	<!--/font awesome-->
+
 	<!--Custom CSS-->
 	<link rel="stylesheet" href="CSS/universal.css" type="text/css" />
 	<link rel="stylesheet" href="CSS/faq.css" type="text/css" />
@@ -24,22 +27,21 @@
 
 <body>
 	<header>
-		<nav id="header-container" class="navbar navbar-expand-lg">
+	    <div id="header-container" class="navbar navbar-expand-lg">
 			<div id="logo-container">
 				<a class="navbar-brand" href="index.html">
 					<img src="img/mournelogo2f312c.png" alt="Mourne Book Club" />
-          </a>
+                 </a>
 			</div>
+<!-- Bootstrap Toggler -->
 			<button
-          id="nav-button"
-          class="navbar-toggler"
-          data-toggle="collapse"
-          data-target="#collapseNav"
-        >
-          <span id="toggle-icon"><i class="fas fa-bars"></i></span>
-        </button>
-
-			<div class="collapse navbar-collapse" id="collapseNav">
+                id="nav-button"
+                class="navbar-toggler"
+                data-toggle="collapse"
+                data-target="#collapseNav"><span id="toggle-icon"><i class="fas fa-bars"></i></span>
+            </button>
+<!-- Navbar -->
+			<nav class="collapse navbar-collapse" id="collapseNav">
 				<ul class="navbar-nav ml-auto" id="menu">
 					<li class="nav-item">
 						<a class="nav-link hover" href="index.html">HOME</a>
@@ -54,20 +56,22 @@
 						<a class="nav-link hover" href="contact.html">CONTACT</a>
 					</li>
 					<li class="nav-item">
-						<a type="button" class="nav-link hover" data-toggle="modal" data-target="#loginModal">
-							LOGIN
-						</a>
+						<a type="button" class="nav-link hover" data-toggle="modal" data-target="#loginModal">LOGIN</a>
 					</li>
 				</ul>
-			</div>
-		</nav>
-		<!-- Bootstrap Modal -->
+			</nav>
+<!-- /navbar -->
+		</div>
+<!-- /bootstrap Toggler -->
+
+<!-- Bootstrap Modal LOGIN-->
 		<div class="modal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-centered" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
 						<h2>SIGN IN</h2>
 					</div>
+
 					<div id="modal" class="modal-body">
 						<fieldset id="Modal-signin">
 							<form method="post" action="https://formdump.codeinstitute.net">
@@ -83,28 +87,23 @@
 
 					<div class="modal-footer">
 						<div id="M-footer">
-							<p>Not a member? <a href="#" data-toggle="modal" data-target="#registerModal"
-									data-dismiss="modal">Register</a></p>
-							<button
-                type="button"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
+		<p>Not a member? <a href="#" data-toggle="modal" data-target="#registerModal" data-dismiss="modal">Register</a></p>
+			<button type="button" data-dismiss="modal">Close</button>
 						</div>
 					</div>
 
 				</div>
 			</div>
 		</div>
-
-		<div class="modal" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModal"
-			aria-hidden="true">
+<!-- /bootstrap Modal LOGIN-->
+<!-- Bootstrap Modal REGISTER-->
+		<div class="modal" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModal" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-centered" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
 						<h2>SIGN UP</h2>
 					</div>
+
 					<div id="signup-modal" class="modal-body">
 						<fieldset id="Modal-signup">
 							<form method="post" action="https://formdump.codeinstitute.net">
@@ -121,20 +120,15 @@
 
 					<div class="modal-footer">
 						<div id="S-footer">
-							<p>Already a member? <a href="#" data-toggle="modal" data-target="#loginModal"
-									data-dismiss="modal">Login</a></p>
-							<button
-                type="button"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
+	    <p>Already a member? <a href="#" data-toggle="modal" data-target="#loginModal" data-dismiss="modal">Login</a></p>
+			<button type="button" data-dismiss="modal">Close</button>
 						</div>
 					</div>
 
 				</div>
 			</div>
 		</div>
+<!-- /bootstrap Modal LOGIN-->
 	</header>
 
 	<section>
@@ -233,15 +227,15 @@
 				<strong>Follow Us</strong>
 				<ul class="list-inline">
 					<li class="list-inline-item">
-						<a href="https://www.facebook.com/"
-							target="_blank"><i class="fab fa-facebook-square" id="fb"></i></a>
+						<a  href="https://www.facebook.com/" 
+                            target="_blank"><i class="fab fa-facebook-square" id="fb"></i></a>
 					</li>
 					<li class="list-inline-item">
-						<a href="https://www.twitter.com/"
+						<a  href="https://www.twitter.com/"
 							target="_blank"><i class="fab fa-twitter-square" id="tt"></i></a>
 					</li>
 					<li class="list-inline-item">
-						<a href="https://www.youtube.com/"
+						<a  href="https://www.youtube.com/"
 							target="_blank"><i class="fab fa-youtube-square" id="yt"></i></a>
 					</li>
 				</ul>
@@ -250,15 +244,13 @@
 			<div class="col-12" id="address">
 				<div>
 					<strong>Address</strong>
-					<br />
-					<em
-              >12 Burren Road,<br />Rostrevor,<br />County Down.<br />BT34
-              1AB</em>
+					<br>
+					<em>12 Burren Road,<br>Rostrevor,<br>County Down.<br>BT34 1AB</em>
 				</div>
 				<div>
 					<strong>Phone Number:</strong>
 					<em>+44 6276 693281</em>
-					<br />
+					<br>
 					<strong>Email:</strong>
 					<em>info@mournebookclub.co.uk</em>
 				</div>
@@ -269,6 +261,7 @@
 			</div>
 		</div>
 	</footer>
+
 </body>
 <!--Bootstrap-->
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
