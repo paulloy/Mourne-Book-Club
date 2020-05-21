@@ -188,6 +188,10 @@ functionality to the website, such as the Navbar Toggler, the Carousel, and the 
     and the content will all reduce in size. Carousel sliders will decrease in size.
     1. At 450px, the translucent container will increase in size so that the carousel sliders appear above it.
 
+1. Bugs 
+    1. There is a bug that occurs sometimes in which the book cover in the carousel will initially load smaller than usual when the 
+    page is first opened, but once the slide moves onto the next, it will return to its normal size, and won't reduce in size again.
+
 ### Navbar
 
 1. Testing 
