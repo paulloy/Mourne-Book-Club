@@ -292,3 +292,4 @@ The following icons were sourced from [Font Awesome](https://fontawesome.com/)
 ### Acknowledgements
 
 - I received inspiration for this project from conversations with my friends Tomás M, Kamil M, Eoin M, and Conor S.
+- I would also like to thank my tutor Caleb for his helpful advice while working on this project.
