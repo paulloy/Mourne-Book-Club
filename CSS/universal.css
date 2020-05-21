@@ -83,7 +83,7 @@ body {
 }
 
 #menu li a:active {
-  color: #2f312c6c;
+  background-color: rgba(114, 109, 96, 0.8);
 }
 
 #active-page {
@@ -110,6 +110,9 @@ body {
 
 #toggle-icon i:hover {
   background-color: rgba(114, 109, 96, 0.5);
+}
+#toggle-icon i:active {
+  background-color: rgba(114, 109, 96, 0.8);
 }
 
 /* #### 1.4.Modal #### */
