@@ -69,6 +69,11 @@ members may change their profile photos, or contact information. This will be ex
 The contact form allows users to contact the club with any further questions they have that are not already covered on 
 the FAQ page.
 
+### Home page
+
+The home page is the first page that will open when users visit this website. At the top of the page is the Bootstrap carousel.
+Below this is the about section with information on "Who we are", "Where we meet", and "Testimonials".
+
 ### Members page
 
 This allows a user to view the current club members, their names, the books they are reading, and a small gallery
@@ -273,7 +278,7 @@ It can be run locally and edited using Gitpod.
 The quote on the homepage featured in 'Where we meet' which was attributed to C.S. Lewis, "That part of Rostrevor which overlooks Carlingford Lough
 is my idea of Narnia." was copied from [Visit Mourne Mountains](https://www.visitmournemountains.co.uk/ChroniclesofNarnia)
 
-Google maps was copied from [Google Maps]("https://www.google.com/maps/place/Rostrevor,+Newry/@54.1068079,-6.2039405,14z/data=!3m1!4b1!4m5!3m4!1s0x4860d709523d0af3:0x40a379b46bb71a68!8m2!3d54.10073!4d-6.2003999").
+Google maps was copied from [Google Maps](https://www.google.com/maps/place/Rostrevor,+Newry/@54.1068079,-6.2039405,14z/data=!3m1!4b1!4m5!3m4!1s0x4860d709523d0af3:0x40a379b46bb71a68!8m2!3d54.10073!4d-6.2003999).
 
 The following .txt file contains all the HTML5 Bootstrap classes used in this project:
 - [Bootstrap classes](BootstrapClasses.txt)
