@@ -225,12 +225,15 @@ functionality to the website, such as the Navbar Toggler, the Carousel, and the 
 1. Responsive design
     1. At 576px, the phone number, and email will drop below the address. The font size will decrease.
 
-### FAQ
+### Home 
 
-1. Responsive design
-    1. At 991ppx, the three columns will reduce to two columns.
-    1. At 767px, the two columns will reduce to one column.
-    1. At 576px, the font sizes will reduce.
+1. Responsive design 
+    1. Carousel already tested above.
+    1. At 991px, the About section will collapse into a single column, with "Where we meet" moving below "Who we are"
+    and "Testimonials" remaining at the bottom.
+    1. At 576px, the widths of the containers will increase and the font sizes will decrease. The images in "Testimonials"
+    will decrease in size and will move above their quotes.
+    1. At 450px, the padding inside the containers will reduce.
 
 ### Members 
 
@@ -242,6 +245,21 @@ functionality to the website, such as the Navbar Toggler, the Carousel, and the 
     1. Given the large number of images on this page, it can take long to load them all. This may be sped up by 
     reducing the quality of members images since they are displayed as thumbnails. This may make the file size smaller 
     and speed up loading times. High quality images aren't neccessary for thumbnails.
+
+### FAQ
+
+1. Responsive design
+    1. At 991ppx, the three columns will reduce to two columns.
+    1. At 767px, the two columns will reduce to one column.
+    1. At 576px, the font sizes will reduce.
+
+### Contact
+
+1. Responsive design
+    1. The contact form was tested above.
+    1. At 767px, the contact details will move below the map into a single column. The contact form is below the map and contact
+    details.
+    1. At 576px, the font sizes will decrease.
 
 ## Deployment
 
