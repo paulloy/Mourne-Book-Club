@@ -3,7 +3,7 @@
 The [Mourne Book Club](https://paulloy.github.io/Mourne-Book-Club/) has been rapidly attracting new members, and this project
 aims to accommodate that growth through being a hub where members can keep up to date with important club information, such
 as: what books are being read, who is reading them, and when will the meetings take place.
-For potential members, this project serves as an easy way for them to learn about what the club is, where they meet,
+For new users, this project serves as an easy way for them to learn about what the club is, where they meet,
 and how they can join.
 The Mourne Book Club aims to become the central node in a network of book clubs in the Newry and Mourne district.
 
@@ -24,9 +24,10 @@ what.
   not attended them. With no one to ask, I will check out the website.
   - I am first greeted with a carousel that immediately informs me of what I was searching for. Displayed are all the titles
   that will be covered at each meeting. Scrolling through I learn more about each title and settle on one book to read.
-  - The meeting is in two weeks in the evening after I finish work, so I add the date to my calender.
+  - The meeting is in two weeks at the evening, knowing this I can now add the date to my calender.
   - I now move onto the members page to see who will be reading the same title as me. I notice some familiar faces,
-  and some new ones. Now I have everything I need to know, I now log out.
+  and some new ones. 
+  - Now having the information I needed, I log out.
 
 - User: New User
   - I am thinking of joining a book club and I happen to come upon the Mourne Book Club. Delighted to see a book club with its own website
@@ -39,7 +40,9 @@ what.
   answered. Though, I still have some questions not yet answered.
   - I visit the contact page, and I see Google maps which lets me input my address and calculate how long it will take to 
   drive to the club. 
-  - Below the address and map, I fill in a contact form with the remaining questions I have in mind.
+  - Below the address and map, I fill in a contact form with the remaining questions I have in mind, and submit them.
+  - Satisfied, I now explore the members page and notice a gallery with images from the club that make it look like 
+  a great place to meet people and chat about books.
 
 ### Project Wireframe
 
@@ -53,10 +56,13 @@ The user is first greeted with a carousel that features all the books that will 
 For members, this is the most important information. For new users, this is an advertisement of the diverse range of books
 covered by the club. There is a book for everyone.
 
-### Bootstrap Modal
+### Login / Bootstrap Modal
 
 A login modal appears whenever _Login_ is selected in the navbar. This allows current members to sign in. If the user is
 not already a member, then they can register.
+
+Though not conceived of in the project wireframes and planning, this Login section was added later as a way through which
+members may change their profile photos, or contact information. This will be expanded upon at a later stage in the project.
 
 ### Contact Form
 
@@ -67,6 +73,10 @@ the FAQ page.
 
 This allows a user to view the current club members, their names, the books they are reading, and a small gallery
 with photos from the club.
+
+At a later stage in the project when there are more members, I may expand the gallery section and reduce the size of 
+the members images section into a scrollable list, so that the page doesn't become too cumbersome when more users 
+start joining the club.
 
 ### FAQ page
 
@@ -90,10 +100,14 @@ functionality to the website, such as the Navbar Toggler, the Carousel, and the 
 
 ## Testing
 
+### Images 
+
+1. Link to img folder is broken.
+    1. Alt messages successfully displayed and the website maintains its functionality.
+
 ### Contact Form
 
 1. Submitting Form
-
    1. Submitting empty form displays, *Please fill in this field* for *Your Name*.
    1. Submitting form with *Your Name* filled displays, *Please fill in this field* for *Your Email*.
    1. Submitting *Your Email* without an *@* symbol displays *Please include an '@' in the email address. 'a' is missing an '@'*.
@@ -104,7 +118,6 @@ functionality to the website, such as the Navbar Toggler, the Carousel, and the 
    required information will successfully submit the form.
 
 1. Responsive design
-
     1. When the screen width is greater than 767px, the contact form will remain in a row with two columns. The left column
     featuring the *Your Name*, *Your Email*, *Your Phone Number (Optional)*, *Join Our Mailing List (Optional)*, and
     their respective labels and checkbox. The right column featuring *Your Message*, its label, and a *Send Message* button.
@@ -114,7 +127,6 @@ functionality to the website, such as the Navbar Toggler, the Carousel, and the 
     1. The inputs remain responsive by maintaining an 80% width of their containers at all times.
 
 1. Bugs 
-
     1. At this stage of the project, the form submits data to [Code Institute Form Dump]("https://formdump.codeinstitute.net")
    to confirm that the form will successfully submit data. They may become fully functional at a later stage in development.
     1. *Your Email* will submit despite not having a proper address format. An error only displays when an '@' symbol is abscent.
@@ -124,7 +136,6 @@ functionality to the website, such as the Navbar Toggler, the Carousel, and the 
 ### Login
 
 1. Click Login
-
     1. Sign in Modal appears on page.
     1. Logging in with an empty form displays *Please fill in this field* for *Your Email*.
     1. logging in *Your Email* without an *@* symbol displays *Please include an '@' in the email address. 'a' is missing an '@'*.
@@ -135,7 +146,6 @@ functionality to the website, such as the Navbar Toggler, the Carousel, and the 
     1. Logging in with a password of 8 characters or more will successfully submit.
 
 1. Clicking; Not a member? Register
-
     1. Sign Up Modal appears on page. 
     1. Registering in with an empty form displays *Please fill in this field* for *Your Email*.
     1. Registering *Your Email* without an *@* symbol displays *Please include an '@' in the email address. 'a' is missing an '@'*.
@@ -179,6 +189,7 @@ functionality to the website, such as the Navbar Toggler, the Carousel, and the 
     1. At 450px, the translucent container will increase in size so that the carousel sliders appear above it.
 
 ### Navbar
+
 1. Testing 
     1. Clicking *HOME* from *HOME* will reload the page.
     1. Clicking *MEMBERS*, *FAQ*, or *CONTACT* from *HOME* will load their respective pages.
@@ -242,8 +253,13 @@ is my idea of Narnia." was copied from [Visit Mourne Mountains](https://www.visi
 
 Google maps was copied from [Google Maps]("https://www.google.com/maps/place/Rostrevor,+Newry/@54.1068079,-6.2039405,14z/data=!3m1!4b1!4m5!3m4!1s0x4860d709523d0af3:0x40a379b46bb71a68!8m2!3d54.10073!4d-6.2003999").
 
-The following .txt file contains all the HTML5 Bootstrap classes:
+The following .txt file contains all the HTML5 Bootstrap classes used in this project:
 - [Bootstrap classes](BootstrapClasses.txt)
+
+The modified Bootstrap components were sourced from:
+- Navbar toggler: [https://getbootstrap.com/docs/4.0/components/navbar/](https://getbootstrap.com/docs/4.0/components/navbar/)
+- Modal: [https://getbootstrap.com/docs/4.0/components/modal/](https://getbootstrap.com/docs/4.0/components/modal/)
+- Carousel: [https://getbootstrap.com/docs/4.0/components/carousel/](https://getbootstrap.com/docs/4.0/components/carousel/)
 
 ### Media
 
