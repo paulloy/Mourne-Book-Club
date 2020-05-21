@@ -1,0 +1,37 @@
+Bootstrap classes:
+
+navbar
+navbar-expand-lg
+navbar-brand
+navbar-toggler
+collapse
+navbar-collapse
+navbar-nav
+ml-auto
+nav-item
+nav-link
+modal
+modal-dialog 
+modal-dialog-centered
+modal-content
+modal-header
+modal-body
+modal-footer
+carousel slide
+carousel-inner
+carousel-item 
+active
+d-block 
+w-100
+carousel-caption
+container-fluid
+row 
+no-gutters 
+d-12-inline-block
+list-inline
+list-inline-item
+col-12
+col-md-6
+col-lg-4
+col-sm-12
+col-lg-8
