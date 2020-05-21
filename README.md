@@ -279,11 +279,11 @@ on the [GNU Image Manipulation Program](https://www.gimp.org/).
 
 The following icons were sourced from [Font Awesome](https://fontawesome.com/)
 
-- [<i class="fas fa-bars"></i>](https://fontawesome.com/icons/bars?style=solid)
-- [<i class="far fa-copyright"></i>](https://fontawesome.com/icons/copyright?style=regular)
-- [<i class="fab fa-facebook-square" id="fb"></i>](https://fontawesome.com/icons/facebook-square?style=brands)
-- [<i class="fab fa-twitter-square" id="tt"></i>](https://fontawesome.com/icons/twitter-square?style=brands)
-- [<i class="fab fa-youtube-square" id="yt"></i>](https://fontawesome.com/icons/youtube-square?style=brands)
+- [fa-bars](https://fontawesome.com/icons/bars?style=solid)
+- [fa-copyright](https://fontawesome.com/icons/copyright?style=regular)
+- [fa-facebook-square](https://fontawesome.com/icons/facebook-square?style=brands)
+- [fa-twitter-square](https://fontawesome.com/icons/twitter-square?style=brands)
+- [fa-youtube-square](https://fontawesome.com/icons/youtube-square?style=brands)
 
 ### Acknowledgements
 
