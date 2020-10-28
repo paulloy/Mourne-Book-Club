@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mourne Book Club</title>
+
+    <!--Bootstrap-->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!--/bootstrap-->
+
+    <!--Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/24762b2e03.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--/font awesome-->
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="CSS/universal.css" type="text/css"/>
+    <link rel="stylesheet" href="CSS/contact.css" type="text/css" />
+    <!--/custom CSS-->
+  </head>
+
+  <body>
+    <header>
+	    <div id="header-container" class="navbar navbar-expand-lg">
+			<div id="logo-container">
+				<a class="navbar-brand" href="index.html">
+					<img src="img/mournelogo2f312c.png" alt="Mourne Book Club" />
+                 </a>
+			</div>
+<!-- Bootstrap Toggler -->
+			<button
+                id="nav-button"
+                class="navbar-toggler"
+                data-toggle="collapse"
+                data-target="#collapseNav"><span id="toggle-icon"><i class="fas fa-bars"></i></span>
+            </button>
+<!-- Navbar -->
+			<nav class="collapse navbar-collapse" id="collapseNav">
+				<ul class="navbar-nav ml-auto" id="menu">
+					<li class="nav-item">
+						<a class="nav-link hover" href="index.html">HOME</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link hover" href="members.html">MEMBERS</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link hover" href="faq.html">FAQ</a>
+					</li>
+					<li class="nav-item">
+						<a id="active-page" class="nav-link" href="contact.html">CONTACT</a>
+					</li>
+					<li class="nav-item">
+						<a type="button" class="nav-link hover" data-toggle="modal" data-target="#loginModal">LOGIN</a>
+					</li>
+				</ul>
+			</nav>
+<!-- /navbar -->
+		</div>
+<!-- /bootstrap Toggler -->
+
+<!-- Bootstrap Modal LOGIN-->
+		<div class="modal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h2>SIGN IN</h2>
+					</div>
+
+					<div id="modal" class="modal-body">
+						<fieldset id="Modal-signin">
+							<form method="post" action="https://formdump.codeinstitute.net">
+								<label for="M-email">Your Email</label>
+								<input id="M-email" type="email" name="email" required>
+								<label for="M-password">Your Password</label>
+								<input id="M-password" type="password" name="password" minlength="8" required>
+								<a href="contact.html">Forgot Password?</a>
+								<button type="submit">Login</button>
+							</form>
+						</fieldset>
+					</div>
+
+					<div class="modal-footer">
+						<div id="M-footer">
+		<p>Not a member? <a href="#" data-toggle="modal" data-target="#registerModal" data-dismiss="modal">Register</a></p>
+			<button type="button" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+<!-- /bootstrap Modal LOGIN-->
+<!-- Bootstrap Modal REGISTER-->
+		<div class="modal" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModal" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h2>SIGN UP</h2>
+					</div>
+
+					<div id="signup-modal" class="modal-body">
+						<fieldset id="Modal-signup">
+							<form method="post" action="https://formdump.codeinstitute.net">
+								<label for="SU-email">Your Email</label>
+								<input id="SU-email" type="email" name="email" required>
+								<label for="SU-password">Your Password</label>
+								<input id="SU-password" type="password" name="password" minlength="8" required>
+								<label for="SU-password2">Repeat Password</label>
+								<input id="SU-password2" type="password" name="password-repeat" minlength="8" required>
+								<button type="submit">Register</button>
+							</form>
+						</fieldset>
+					</div>
+
+					<div class="modal-footer">
+						<div id="S-footer">
+	    <p>Already a member? <a href="#" data-toggle="modal" data-target="#loginModal" data-dismiss="modal">Login</a></p>
+			<button type="button" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+<!-- /bootstrap Modal LOGIN-->
+	</header>
+
+    <section>
+      <h2 id="page-title">Contact Us</h2>
+      <div class="container-fluid">
+        <div class="row no-gutters">
+          <div class="col-md-6 col-12">
+<!-- Google maps -->
+            <div id="google-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18713.081104214325!2d-6.203940496419985!3d54.106807889725935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4860d709523d0af3%3A0x40a379b46bb71a68!2sRostrevor%2C%20Newry!5e0!3m2!1sen!2suk!4v1588093385729!5m2!1sen!2suk"
+                width="600"
+                height="450"
+                frameborder="0"
+                style="border: 0;"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+              ></iframe>
+            </div>
+          </div>
+<!-- Contact details -->
+          <div id="contact-address" class="col-md-6 col-12">
+            <strong>Address</strong>
+            <p>12 Burren Road,<br>Rostrevor,<br>County Down.<br>BT34 1AB</p>
+            <br>
+            <strong>Phone Number:</strong>
+            <p>+44 6276 693281</p>
+            <br>
+            <strong>Email:</strong>
+            <p>info@mournebookclub.co.uk</p>
+          </div>
+<!-- Contact Form -->
+          <fieldset class="col-12">
+            <form method="post" action="https://formdump.codeinstitute.net">
+              <div id="input1">
+                <label for="name">
+                    <strong>Your Name:</strong>
+                </label>
+                <input name="name" type="text" id="name" required />
+
+                <label for="email">
+                    <strong>Your Email:</strong>
+                </label>
+                <input name="email" type="email" id="email" placeholder=" example@address.com" required/>
+
+                <label name="phone" for="phone">
+                    <strong>Your Phone Number (Optional):</strong>
+                </label>
+                <input name="phone" type="tel" id="phone" />
+
+            <span>
+                <label for="mailinglist">
+                    <strong>Join Our Mailing List (Optional):</strong>
+                </label>
+                <input name="mailing-list" type="checkbox" id="mailinglist"/>
+            </span>              
+              </div>
+
+              <div id="input2">
+                <label for="message">
+                    <strong>Your Message:</strong>
+                </label>
+                <textarea spellcheck="true" name="message" type="text" id="message" size="280" required></textarea>
+
+                <button type="submit">Send Message</button>
+              </div>
+
+            </form>
+          </fieldset>
+        </div>
+      </div>
+    </section>
+
+    <footer class="container-fluid">
+		<div id="foot" class="row no-gutters d-12-inline-block">
+			<div class="col-12" id="socialmedia">
+				<strong>Follow Us</strong>
+				<ul class="list-inline">
+					<li class="list-inline-item">
+						<a  href="https://www.facebook.com/" 
+                            target="_blank"><i class="fab fa-facebook-square" id="fb"></i></a>
+					</li>
+					<li class="list-inline-item">
+						<a  href="https://www.twitter.com/"
+							target="_blank"><i class="fab fa-twitter-square" id="tt"></i></a>
+					</li>
+					<li class="list-inline-item">
+						<a  href="https://www.youtube.com/"
+							target="_blank"><i class="fab fa-youtube-square" id="yt"></i></a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="col-12" id="address">
+				<div>
+					<strong>Address</strong>
+					<br>
+					<em>12 Burren Road,<br>Rostrevor,<br>County Down.<br>BT34 1AB</em>
+				</div>
+				<div>
+					<strong>Phone Number:</strong>
+					<em>+44 6276 693281</em>
+					<br>
+					<strong>Email:</strong>
+					<em>info@mournebookclub.co.uk</em>
+				</div>
+			</div>
+
+			<div class="col-12" id="copyright">
+				<p>copyright <i class="far fa-copyright"></i>2020</p>
+			</div>
+		</div>
+	</footer>
+
+  </body>
+  <!--Bootstrap-->
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"
+  ></script>
+  <!--/bootstrap-->
+</html>
